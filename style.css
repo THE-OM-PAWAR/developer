@@ -1,20 +1,3 @@
-@font-face {
-  font-family: 'Nunito';
-  src: 
-       url('/fonts_file/nunitoWOFF2/Nunito-Light.woff2') format('woff2'),
-       url('/fonts_file/nunitoWOFF2/Nunito-Medium.woff2') format('woff2'),
-       url('/fonts_file/nunitoWOFF2/Nunito-Regular.woff2') format('woff2'),
-}
-
-@font-face {
-  font-family: 'Narin';
-  src:   url('/fonts_file/narinWOFF2/AnyConv.com__NarinBlack.woff2') format('woff2'),
-  url('/fonts_file/narinWOFF2/AnyConv.com__NarinBold.woff2') format('woff2'),
-
-  url('/fonts_file/narinWOFF2/AnyConv.com__NarinLight.woff2') format('woff2'),
-  url('/fonts_file/narinWOFF2/AnyConv.com__NarinRegular.woff2') format('woff2'),
-  url('/fonts_file/narinWOFF2/AnyConv.com__NarinThin.woff2') format('woff2'),
-}
 
 
 * {
@@ -38,7 +21,7 @@ html {
   background-color: #f6f6f3;
   text-align: center;
   text-transform: uppercase;
-  font-family: Narin;
+  font-family: Montserrat;
   font-size: 2.2rem;
   font-weight: 800;
   padding: 0.4rem;
@@ -124,7 +107,7 @@ body::-webkit-scrollbar {
   border: 0.2rem solid white;
   border-radius: 20rem;
   background-color: #ffffff2f;
-  font-family: Narin;
+  font-family: Montserrat;
   font-weight: 800;
   font-size: 1.6rem;
   color: #fff;
@@ -145,7 +128,7 @@ body::-webkit-scrollbar {
   padding: 1.5rem 3rem;
   width: 100vw;
   z-index: 99;
-  font-family: Narin;
+  font-family: Montserrat;
 }
 #nav_part1 > svg {
   width: 10rem;
@@ -161,7 +144,7 @@ body::-webkit-scrollbar {
   color: black;
   text-transform: uppercase;
   margin: 0rem 2.5rem;
-  font-family: Narin;
+  font-family: Montserrat;
   font-weight: 300;
   font-size: 1.4rem;
 }
@@ -201,7 +184,7 @@ body::-webkit-scrollbar {
   border-radius: 40rem;
   top: 0;
   opacity: 0;
-  font-family: Narin;
+  font-family: Montserrat;
   font-weight: 800;
   font-size: 3rem;
   padding: 5rem 4rem;
@@ -246,7 +229,7 @@ body::-webkit-scrollbar {
   width: auto;
   height: 12rem;
   width: 28rem;
-  font-family: Narin;
+  font-family: Montserrat;
   font-size: 2.8rem;
   line-height: 3.4rem;
   font-weight: 400;
@@ -297,7 +280,7 @@ body::-webkit-scrollbar {
   width: 40vw;
   color: #fff;
   height: fit-content;
-  font-family: Narin;
+  font-family: Montserrat;
   font-size: 4rem;
   font-weight: 800;
   line-height: 4.6rem;
@@ -323,7 +306,7 @@ body::-webkit-scrollbar {
   min-height: 100vh;
 }
 .section > h1 {
-  font-family: Narin;
+  font-family: Montserrat;
   font-size: 7rem;
   letter-spacing: -0.6rem;
   font-weight: 800;
@@ -446,7 +429,7 @@ body::-webkit-scrollbar {
   /* transform: translateY(-.05xvw); */
   width: 4rem;
   text-align: center;
-  font-family: Narin;
+  font-family: Montserrat;
   font-size: 0.6vw;
   font-weight: 800;
 }
@@ -473,7 +456,7 @@ body::-webkit-scrollbar {
   margin: 2rem;
 }
 #nav_btns > a {
-  font-family: Narin;
+  font-family: Montserrat;
   font-size: 1.6rem;
   font-weight: 400;
   text-align: center;
@@ -515,7 +498,7 @@ body::-webkit-scrollbar {
   justify-content: center;
 }
 .discription > h3 {
-  font-family: Narin;
+  font-family: Montserrat;
   font-size: 3.5rem;
   font-weight: 800;
   text-align: center;
@@ -633,7 +616,7 @@ body::-webkit-scrollbar {
   color: #fff;
 }
 .card_heading {
-  font-family: Narin;
+  font-family: Montserrat;
   margin: 1.5rem 2rem;
   font-size: 2.5rem;
   font-weight: 800;
@@ -649,7 +632,7 @@ body::-webkit-scrollbar {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: Narin;
+  font-family: Montserrat;
   font-size: 2.6rem;
   font-weight: 300;
   line-height: 31px;
@@ -670,12 +653,12 @@ body::-webkit-scrollbar {
   margin-top: 2rem;
   text-transform: uppercase;
   font-size: 1.4rem;
-  font-family: Narin;
+  font-family: Montserrat;
   font-weight: 400;
   text-align: center;
 }
 .other_info {
-  font-family: Narin;
+  font-family: Montserrat;
   font-size: 1.6rem;
   font-weight: 400;
   text-align: center;
@@ -696,7 +679,7 @@ body::-webkit-scrollbar {
   height: 1rem;
 }
 #EXTRA_head {
-  font-family: Narin;
+  font-family: Montserrat;
   font-size: 6.5vw;
   /* letter-spacing: -0.6rem; */
   /* font-weight: 800; */
@@ -756,7 +739,7 @@ footer > div > div {
 #foot_link {
   bottom: 10rem;
   left: 10rem;
-  font-family: Narin;
+  font-family: Montserrat;
   font-size: 2rem;
   font-weight: 700;
   line-height: 2.3rem;
@@ -962,7 +945,7 @@ footer > div > div {
     transform: translateY(-.35rem);
     width: 4rem;
     text-align: center;
-    font-family: Narin;
+    font-family: Montserrat;
     font-size: 1.4rem;
     font-weight: 800;
   }
