@@ -1,21 +1,67 @@
 @font-face {
-  font-family: 'Nunito';
+  font-family: "Nunito";
+  src: url("fonts_file/nunitoWOFF2/Nunito-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nunito";
   src: 
-       url('/fonts_file/nunitoWOFF2/Nunito-Light.woff2') format('woff2'),
-       url('/fonts_file/nunitoWOFF2/Nunito-Medium.woff2') format('woff2'),
-       url('/fonts_file/nunitoWOFF2/Nunito-Regular.woff2') format('woff2'),
+    url("fonts_file/nunitoWOFF2/Nunito-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Nunito";
+  src: 
+    url("fonts_file/nunitoWOFF2/Nunito-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Narin';
-  src:   url('/fonts_file/narinWOFF2/AnyConv.com__NarinBlack.woff2') format('woff2'),
-  url('/fonts_file/narinWOFF2/AnyConv.com__NarinBold.woff2') format('woff2'),
-
-  url('/fonts_file/narinWOFF2/AnyConv.com__NarinLight.woff2') format('woff2'),
-  url('/fonts_file/narinWOFF2/AnyConv.com__NarinRegular.woff2') format('woff2'),
-  url('/fonts_file/narinWOFF2/AnyConv.com__NarinThin.woff2') format('woff2'),
+  font-family: "Narin";
+  src: 
+  url("fonts_file/narinWOFF2/NarinLight.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
 }
-
+@font-face {
+  font-family: "Narin";
+  src: 
+  url("fonts_file/narinWOFF2/NarinBlack.woff2")format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Narin";
+  src: 
+    url("fonts_file/narinWOFF2/NarinBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Narin";
+  src: 
+    
+    url("fonts_file/narinWOFF2/NarinMedium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Narin";
+  src: 
+    url("fonts_file/narinWOFF2/NarinRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Narin";
+  src: 
+    url("fonts_file/narinWOFF2/NarinThin.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
 
 * {
   padding: 0;
@@ -193,9 +239,9 @@ body::-webkit-scrollbar {
   position: relative;
   width: 100vw;
   background: #d30000;
-  height: 100vh;
+  min-height: 100vh;
 }
-#main_about_box #hey{
+#main_about_box #hey {
   z-index: 7;
   position: fixed;
   border-radius: 40rem;
@@ -216,7 +262,6 @@ body::-webkit-scrollbar {
   position: relative;
   display: grid;
   width: 100vw;
-  height: 100vh;
   grid-template-columns: 45vw 55vw;
   align-items: stretch;
   justify-content: center;
@@ -327,7 +372,7 @@ body::-webkit-scrollbar {
   font-size: 7rem;
   letter-spacing: -0.6rem;
   font-weight: 800;
-  /* line-height: 166px; */
+  line-height: 16.6rem;
   text-align: left;
   margin-left: 4vw;
 }
@@ -540,6 +585,7 @@ body::-webkit-scrollbar {
   position: relative;
   transform: translateY(1.4rem);
   z-index: 12;
+  margin-top: 10rem;
 }
 #tech_stack_strip {
   position: relative;
@@ -594,11 +640,12 @@ body::-webkit-scrollbar {
   width: 100vw;
   min-height: 100vh;
 }
-#Contact_head {
+/* #Contact_head {
   margin-top: 5vh;
   background: none;
-}
+} */
 #contact_card_container {
+  margin-top: 14rem;
   width: 100vw;
   height: fit-content;
   display: flex;
@@ -644,7 +691,7 @@ body::-webkit-scrollbar {
 }
 .logo_box {
   width: 18rem;
-  height:22rem;
+  height: 22rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -664,6 +711,9 @@ body::-webkit-scrollbar {
 .logo_box > a {
   text-decoration: none;
   color: #fff;
+}
+.information{
+  font-weight: 300;
 }
 
 .click_to_copy {
@@ -770,13 +820,6 @@ footer > div > div {
   text-decoration: underline;
 }
 
-
-
-
-
-
-
-
 /* #media */
 @media screen and (max-width: 1700px) {
   html {
@@ -864,26 +907,6 @@ footer > div > div {
     transform: translateY(0rem);
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   #main_projects_box {
     position: relative;
     height: 45rem;
@@ -922,14 +945,14 @@ footer > div > div {
     font-family: Nunito;
     opacity: 0;
   }
-  
+
   .prj_caption_box:hover > .prj_discription {
     width: 100%;
     min-height: 15rem;
     background: #ffffff;
     opacity: 1;
   }
-  
+
   .prj_caption_head {
     position: relative;
     background: #ffffff;
@@ -959,7 +982,7 @@ footer > div > div {
     background-color: #ff000000;
     height: 1vw;
     /* margin: 0.2rem 0.4rem 0.2rem 2rem; */
-    transform: translateY(-.35rem);
+    transform: translateY(-0.35rem);
     width: 4rem;
     text-align: center;
     font-family: Narin;
@@ -980,65 +1003,6 @@ footer > div > div {
     justify-content: center;
     margin: 4rem;
   }
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   #home_bg_img {
     width: 80vw;
@@ -1051,7 +1015,7 @@ footer > div > div {
     justify-items: center;
   }
   #main_content_box {
-    margin: 0.7rem 1.8rem 0.7rem .07vw;
+    margin: 0.7rem 1.8rem 0.7rem 0.07vw;
     max-width: 90vw;
     font-family: Nunito;
     font-size: 2.2rem;
@@ -1105,7 +1069,7 @@ footer > div > div {
     right: 11.5rem;
   }
   #main_heading_box {
-    margin: .7rem 0.7rem 0.7rem .07rem;
+    margin: 0.7rem 0.7rem 0.7rem 0.07rem;
     padding: 0;
     width: 90vw;
     color: #fff;
@@ -1118,8 +1082,11 @@ footer > div > div {
     align-self: self-end;
     transform: translateY(6rem);
   }
+  #nav_part1 > svg {
+    width: 10rem;
+    height: 8rem;
+  }
 }
-
 
 @media screen and (max-width: 700px) {
   #card_box {
@@ -1127,7 +1094,7 @@ footer > div > div {
     flex-direction: column;
     flex-wrap: nowrap;
   }
-  #hey{
+  #hey {
     display: none;
   }
 
@@ -1159,7 +1126,6 @@ footer > div > div {
     border-radius: 20rem;
     padding: 0.4rem;
   }
-
 
   .pre_prj_box {
     height: 100%;
@@ -1218,6 +1184,40 @@ footer > div > div {
     right: 4rem;
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
+  #EXTRA_head {
+    font-size: 5rem;
+    color: #ffffff;
+    width: 100vw;
+    line-height: 5rem;
+  }
+  .extra {
+    margin: 12rem auto;
+    width: 100vw;
+  }
+  .extra p {
+    padding: 1rem 8rem ;
+    width: 90vw;
+  }
+  .heading {
+    font-size: 1.4rem;
+    font-weight: 800;
+    padding: 0.4rem;
+  }
+  #heading2 {
+    padding-top: 0.4rem;
+  }
 }
 @media screen and (max-width: 350px) {
   .pre_prj_box {
@@ -1236,7 +1236,11 @@ footer > div > div {
   html {
     font-size: 6px;
   }
-
-
 }
-
+@media screen and (max-width: 357px) {
+  #main_projects_box {
+    position: relative;
+    height: 55rem;
+    width: 50rem;
+  }
+}
