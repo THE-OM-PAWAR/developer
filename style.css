@@ -6,59 +6,50 @@
 }
 @font-face {
   font-family: "Nunito";
-  src: 
-    url("fonts_file/nunitoWOFF2/Nunito-Medium.woff2") format("woff2");
+  src: url("fonts_file/nunitoWOFF2/Nunito-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Nunito";
-  src: 
-    url("fonts_file/nunitoWOFF2/Nunito-Regular.woff2") format("woff2");
+  src: url("fonts_file/nunitoWOFF2/Nunito-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Narin";
-  src: 
-  url("fonts_file/narinWOFF2/NarinLight.woff2") format("woff2");
+  src: url("fonts_file/narinWOFF2/NarinLight.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Narin";
-  src: 
-  url("fonts_file/narinWOFF2/NarinBlack.woff2")format("woff2");
+  src: url("fonts_file/narinWOFF2/NarinBlack.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "Narin";
-  src: 
-    url("fonts_file/narinWOFF2/NarinBold.woff2") format("woff2");
+  src: url("fonts_file/narinWOFF2/NarinBold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Narin";
-  src: 
-    
-    url("fonts_file/narinWOFF2/NarinMedium.woff2") format("woff2");
+  src: url("fonts_file/narinWOFF2/NarinMedium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Narin";
-  src: 
-    url("fonts_file/narinWOFF2/NarinRegular.woff2") format("woff2");
+  src: url("fonts_file/narinWOFF2/NarinRegular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Narin";
-  src: 
-    url("fonts_file/narinWOFF2/NarinThin.woff2") format("woff2");
+  src: url("fonts_file/narinWOFF2/NarinThin.woff2") format("woff2");
   font-weight: 200;
   font-style: normal;
 }
@@ -74,7 +65,7 @@ html {
 }
 
 #main {
-  position: relative;
+  /* position: relative; */
   background-color: #f6f6f3;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -241,11 +232,10 @@ body::-webkit-scrollbar {
   background: #d30000;
   min-height: 100vh;
 }
-#main_about_box #hey {
+#hey {
   z-index: 7;
   position: fixed;
   border-radius: 40rem;
-  top: 0;
   opacity: 0;
   font-family: Narin;
   font-weight: 800;
@@ -379,128 +369,139 @@ body::-webkit-scrollbar {
 
 #main_projects_box {
   position: relative;
-  height: 26vw;
-  width: 80vw;
+  height: 70vh;
+  width: 94vw;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   overflow: hidden;
 }
 .pre_prj_box {
   height: 100%;
   width: 31%;
-  /* overflow: hidden; */
-}
-.prj_box {
+  margin: 0.2rem;
+  overflow: hidden;
   position: relative;
+  background-color: #d30000;
+  max-width: 52rem;
+  font-size: 10px;
   display: flex;
   align-items: center;
-  background-color: #fff5f5;
-  width: 100%;
-  height: 100%;
+  justify-content: center;
 }
 
-.thumbnail_box > img {
+.pre_prj_box img {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   object-fit: cover;
+  scale: 1.2;
+  top: 0;
+  left: 0;
+
 }
+
+
+
 .prj_caption_box {
-  width: 70%;
-  height: 2.4vw;
-  background: #ffffff;
-  position: absolute;
+  width: 80%;
+  max-width: 33em;
+  background: #f3f3f3;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  /* overflow: hidden; */
-  border-radius: 1.2vw;
-  transition: 0.1s;
-  /* border-radius:1.2vw 1.2vw 00 0 ; */
+  transform: translate(-50% , -50%); */
+  border-radius: 2em;
+  height: 4em;
+  font-family: Nunito;
 }
+.prj_caption_head{
+  border-radius: 2em;
+  background: #ffffff;
+  position: relative;
+  width:100% ;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+  z-index: 12;
+}
+.live_box{
+  margin: 1em;
+  height: 2em;
+}
+.live_box >svg{
+  height: 100%;
+  width: 100%;
+}
+.prj_caption_head >h3{
+  flex-grow: 1;
+  font-size: 1.8em;
+  width: auto;
+}
+
+
+
+
 .prj_discription {
   position: absolute;
   top: 20%;
-  font-size: 0rem;
+  font-size: 0em;
   font-family: Nunito;
-  font-weight: 600;
+  font-weight: 300;
   width: 100%;
-  height: 0rem;
+  height: 0em;
   background: #fff;
   transition: 0.3s;
   transition-delay: 0.1s;
-  border-radius: 1.2vw 1.2vw;
-  font-size: 1.7rem;
+  border-radius: 1.2em;
   z-index: 10;
-  padding: 1vw;
-  padding-top: 2vw;
+  padding: 1em;
+  padding-top:2.8em;
   font-weight: 600;
   font-family: Nunito;
-  opacity: 0;
+  opacity: 0 ;
   color: #ffffff00;
+  font-size: 1.6em;
+}
+.prj_discription>p{
+  opacity: 0;
+  transform: translateY(-2em);
+  transition: .5s;
+  transition-delay: .3s;
+  font-weight: 400;
+}
+.prj_discription>p>span{
+  opacity: 0;
+  transform: translateY(-2em);
+  transition: .8s;
+  transition-delay: 1s;
+  font-weight: 500;
+  text-transform: capitalize
 }
 
+.prj_caption_box:hover > .prj_discription>p>span {
+  color: #d30000;
+  opacity: 1;
+  transform: translateY(0em);
+}
+.prj_caption_box:hover > .prj_discription>p {
+  color: #000;
+  opacity: 1;
+  transform: translateY(0em);
+}
 .prj_caption_box:hover > .prj_discription {
   width: 100%;
-  height: 15rem;
+  height: 10em;
   background: #ffffff;
   opacity: 1;
-  color: #000;
 }
 
-.prj_caption_head {
-  position: relative;
-  background: #ffffff;
-  height: 2.4vw;
-  border-radius: 1.2vw;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 1rem 0.5rem;
-  z-index: 11;
-}
-.live_box {
-  background: #ffd0d04f;
-  border-radius: 10rem;
-  height: 1.4vw;
-  width: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.live_logo {
-  background-color: red;
-  border: 0.2rem solid black;
-  border-radius: 10rem;
-  margin: 0.2vw 0 0.2vw 0.2vw;
-  height: 1vw;
-  width: 1vw;
-}
-.live {
-  background-color: #ff000000;
-  height: 1vw;
-  margin: 0.1vw 0.2vw 0.1vw 0vw;
-  /* transform: translateY(-.05xvw); */
-  width: 4rem;
-  text-align: center;
-  font-family: Narin;
-  font-size: 0.6vw;
-  font-weight: 800;
-}
-.prj_name {
-  font-family: Nunito;
-  font-size: 1.6rem;
-  font-weight: 800;
-  padding: 0.4rem;
-}
 
 .main_caption_box {
   width: 100vw;
@@ -616,8 +617,7 @@ body::-webkit-scrollbar {
 }
 @keyframes infinity {
   100% {
-    transform: translateX(-50%);
-    transform: translateX(-50%);
+    transform: translateX(-25%);
   }
 }
 #All_tech_box2 {
@@ -712,7 +712,7 @@ body::-webkit-scrollbar {
   text-decoration: none;
   color: #fff;
 }
-.information{
+.information {
   font-weight: 300;
 }
 
@@ -883,8 +883,8 @@ footer > div > div {
     line-height: 3rem;
     font-weight: 400;
   }
-  .prj_name {
-    font-size: 1.3rem;
+  .pre_prj_box {
+    font-size: 8.5px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -905,103 +905,6 @@ footer > div > div {
   #menuBTN > svg {
     width: 2.5rem;
     transform: translateY(0rem);
-  }
-
-  #main_projects_box {
-    position: relative;
-    height: 45rem;
-    width: 80vw;
-  }
-
-  .pre_prj_box {
-    height: 100%;
-    width: 45%;
-  }
-
-  .prj_caption_box {
-    width: 70%;
-    height: 5rem;
-    background: #ffffff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 3rem;
-    transition: 0.3s ease-in;
-    /* border-radius:1.2vw 1.2vw 00 0 ; */
-  }
-
-  .prj_discription {
-    position: absolute;
-    top: 22%;
-    transition: 0.3s ease-in-out;
-    transition-delay: 0.1s;
-    border-radius: 3rem;
-    font-size: 1.7rem;
-    z-index: 10;
-    padding: 1vw;
-    padding-top: 4.5rem;
-    font-weight: 600;
-    font-family: Nunito;
-    opacity: 0;
-  }
-
-  .prj_caption_box:hover > .prj_discription {
-    width: 100%;
-    min-height: 15rem;
-    background: #ffffff;
-    opacity: 1;
-  }
-
-  .prj_caption_head {
-    position: relative;
-    background: #ffffff;
-    height: 5rem;
-    border-radius: 3vw;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 1rem 0.5rem;
-    z-index: 11;
-  }
-  .live_box {
-    background: #ffd0d04f;
-    border-radius: 10rem;
-    height: 2.6rem;
-  }
-  .live_logo {
-    background-color: red;
-    border: 0.2rem solid black;
-    border-radius: 10rem;
-    margin: 0.4rem 0 0.4rem 0.4rem;
-    height: 2rem;
-    width: 2rem;
-  }
-  .live {
-    background-color: #ff000000;
-    height: 1vw;
-    /* margin: 0.2rem 0.4rem 0.2rem 2rem; */
-    transform: translateY(-0.35rem);
-    width: 4rem;
-    text-align: center;
-    font-family: Narin;
-    font-size: 1.4rem;
-    font-weight: 800;
-  }
-  .prj_name {
-    font-family: Nunito;
-    font-size: 1.6rem;
-    font-weight: 800;
-    padding: 0.4rem;
-  }
-  #nav_btns {
-    display: flex;
-    width: 100vw;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 4rem;
   }
 
   #home_bg_img {
@@ -1086,9 +989,12 @@ footer > div > div {
     width: 10rem;
     height: 8rem;
   }
+  .pre_prj_box {
+    font-size: 8px;
+  }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 780px) {
   #card_box {
     display: flex;
     flex-direction: column;
@@ -1102,59 +1008,33 @@ footer > div > div {
     height: 50rem;
     width: 40rem;
   }
-
-  #nav_btns > a > div {
-    width: max-content;
-    height: 6rem;
-    border-radius: 20rem;
-    background: black;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    padding: 0 3.5rem;
-  }
-  .nav_btn {
-    margin: 0 1.5rem;
-    width: 6rem;
-    height: 6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: red;
-    border-radius: 20rem;
-    padding: 0.4rem;
-  }
-
   .pre_prj_box {
-    height: 100%;
-    width: 60%;
-    margin: auto;
+    width: 40vmax;
   }
   #main_projects_box {
-    position: relative;
-    height: 55rem;
-    width: 70rem;
+    height: 65vh;
+  }
+  .pre_prj_box {
+    font-size: 8.2px;
+  }
+}
+@media screen and (max-width: 600px) {
+  
+  .pre_prj_box{
+    width: 90%;
+  }
+  .pre_prj_box {
+    font-size: 8px;
+  }
+  #main_projects_box {
+    height: 60vh;
   }
   .discription > p {
     width: 90vw;
   }
-}
-@media screen and (max-width: 600px) {
-  .pre_prj_box {
-    height: 100%;
-    width: 85%;
-    margin: auto;
-  }
-  .discription > p {
-    width: 95vw;
-  }
-  #main_projects_box {
-    position: relative;
-    height: 55rem;
-    width: 55rem;
-  }
+
+
+
   .card_cover {
     height: 50rem;
     width: 40rem;
@@ -1184,18 +1064,6 @@ footer > div > div {
     right: 4rem;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
   #EXTRA_head {
     font-size: 5rem;
     color: #ffffff;
@@ -1207,7 +1075,7 @@ footer > div > div {
     width: 100vw;
   }
   .extra p {
-    padding: 1rem 8rem ;
+    padding: 1rem 8rem;
     width: 90vw;
   }
   .heading {
@@ -1219,28 +1087,19 @@ footer > div > div {
     padding-top: 0.4rem;
   }
 }
-@media screen and (max-width: 350px) {
-  .pre_prj_box {
-    height: 100%;
-    width: 95%;
-    margin: auto;
-  }
-  .discription > p {
-    width: 95vw;
-  }
-  #main_projects_box {
-    position: relative;
-    height: 60rem;
-    width: 60rem;
-  }
+@media screen and (max-width: 560px) {
   html {
     font-size: 6px;
   }
+  .pre_prj_box {
+    font-size: 8.5px;
+  }
 }
-@media screen and (max-width: 357px) {
-  #main_projects_box {
-    position: relative;
-    height: 55rem;
-    width: 50rem;
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 6px;
+  }
+  .pre_prj_box {
+    font-size: 8px;
   }
 }
