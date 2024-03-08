@@ -58,6 +58,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 
 html {
@@ -67,23 +68,6 @@ body{
   background: #ffffff;
 }
 
-#hey {
-  z-index: 7;
-  border-radius: 40rem;
-  /* opacity: 0; */
-  top: 0;
-  font-family: Narin;
-  font-weight: 800;
-  font-size: 3rem;
-  padding: 5rem 4rem;
-  background-color: #000000cb;
-  color: #ffffff;
-  text-transform: uppercase;
-  cursor: default;
-  /* mix-blend-mode: saturation; */
-  user-select: none;
-  position: fixed;
-}
 
 
 #coursor{
@@ -93,6 +77,7 @@ body{
   border-radius: 50%;
   position: fixed;
   transform: translate(-50% ,-50%) scale(1);
+  opacity: 0;
 }
 
 #main {
@@ -126,6 +111,7 @@ body{
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  
 }
 body::-webkit-scrollbar {
   display: none;
@@ -259,7 +245,7 @@ body::-webkit-scrollbar {
 
 
 menu{
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 0;
   z-index: 34;
@@ -316,13 +302,6 @@ menu >ul{
   margin-left: 3rem;
 
 }
-/* menu{
-  position: absolute;
-  width: 100vw;
-  height: 100vw;
-  z-index: 34;
-  background-color: #000;
-} */
 
 
 
@@ -414,15 +393,18 @@ menu >ul{
   grid-row-start: 1;
   grid-row-end: 3;
   position: relative;
-  background: #d30000;
 }
-#main_image_box > img {
-  width: 28vw;
+#main_image_box img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  background: #d30000;
   mix-blend-mode: hard-light;
   z-index: 1;
+}
+#main_image_box >div {
+  height: 100%;
+  width: 28vw;
+  background: #d30000;
 }
 #main_image_box > svg {
   width: 20vw;
@@ -947,7 +929,7 @@ footer > div > div {
   #main_image_box {
     width: 45vw;
   }
-  #main_image_box > img {
+  #main_image_box >div {
     width: 30vw;
   }
   #main_image_box > svg {
@@ -1068,10 +1050,8 @@ footer > div > div {
     grid-row-end: 3;
     position: relative;
   }
-  #main_image_box > img {
-    width: 38rem;
-    height: 100%;
-    object-fit: cover;
+  #main_image_box >div {
+    width: 38vw;
   }
   #main_image_box > svg {
     width: 25rem;
@@ -1161,12 +1141,8 @@ footer > div > div {
     height: 50vh;
     overflow: hidden;
   }
-  #main_image_box > img {
-    width: 40rem;
-    height: 100%;
-    object-fit: cover;
-    background: #d30000;
-    mix-blend-mode: hard-light;
+  #main_image_box >div {
+    width: 60vw;
   }
   #main_image_box > svg {
     width: 25rem;

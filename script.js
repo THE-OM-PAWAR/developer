@@ -1,36 +1,38 @@
 let scroll = new LocomotiveScroll({
   el: document.querySelector("#main"),
   smooth: true,
+  smoothMobile: true,
+getSpeed: true,
 });
 
 
 
+
+// document.body.style.overflow = 'hidden';
 // function moving_courser() {
 // let main_about_box = document.querySelector("#main_about_box");
 // let hey_btn = document.querySelector("#hey");
-//   // main_about_box.addEventListener("mouseenter", function () {
-//   //   gsap.to(hey_btn, {
-//   //     scale: 1,
-//   //     opacity: 1,
-//   //     delay: 1,
-//   //     transition:.3
-//   //   });
-//   // });
-//   // main_about_box.addEventListener("mouseout", function () {
-//   //   gsap.to(hey_btn, {
-//   //     scale: 0,
-//   //     opacity: 0,
-//   //     delay: 1,
-//   //     transition:.3
-//   //   });
-//   // });
+//   main_about_box.addEventListener("mouseenter", function () {
+//     gsap.to(hey_btn, {
+//       scale: 1,
+//       opacity: 1,
+//       delay: .2,
+//       transition:.1
+//     });
+//   });
+//   main_about_box.addEventListener("mouseleave", function () {
+//     gsap.to(hey_btn, {
+//       scale: 0,
+//       opacity: 0,
+//       delay: .2,
+//       transition:.1
+//     });
+//   });
 //   main_about_box.addEventListener("mousemove", function (dets) {
-//     let higth = screen.height
 //     gsap.to(hey_btn, {
 //       left: (dets.x -80 ),
-//       top: (dets.y + higth)
+//       top: (dets.y -80)
 //     });
-//     console.log(dets.y + higth)
 //   });
 
 // }
@@ -70,6 +72,7 @@ loading_animation();
 function mousemove_ani() {
   document.addEventListener("mousemove" , function(dets){
     gsap.to("#coursor",{
+      opacity:1,
       left: dets.x,
       top:dets.y,
     })
@@ -122,6 +125,19 @@ function mousemove_ani() {
       transform: 'translate(-50% ,-50%) scale(1)'
     })
   })
+  document.querySelector("#menuBTN").addEventListener("mouseenter" ,function(){
+    gsap.to("#coursor",{
+      scale:.05,
+      transform: 'translate(-50% ,-50%) scale(1)'
+    })
+  })
+  
+  document.querySelector("#menuBTN").addEventListener("mouseleave" ,function(){
+    gsap.to("#coursor",{
+      scale:1,
+      transform: 'translate(-50% ,-50%) scale(1)'
+    })
+  })
 
   
 }  
@@ -132,6 +148,8 @@ function menu_work() {
   menuBTN.onclick = ()=>{
     if (menuBTN.classList.contains("not_clicked")) {
       menuBTN.classList.remove("not_clicked")
+      document.body.style.overflow = 'hidden';
+      scroll.stop();
       document.querySelector("menu").style.height="100vh"
       document.querySelectorAll(".link").forEach(element => {
         element.style.color = "#fff"
@@ -197,10 +215,11 @@ function menu_work() {
         />
       </svg>`
         
-      // });
 
     }else{
       menuBTN.classList.add("not_clicked")
+      document.body.style.overflow = 'initial';
+      scroll.start();
       document.querySelector("menu").style.height="0vh"
       document.querySelectorAll(".link").forEach(element => {
         element.style.color = "#000"
