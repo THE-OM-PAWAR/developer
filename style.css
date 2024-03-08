@@ -214,6 +214,7 @@ body::-webkit-scrollbar {
   width: 100vw;
   z-index: 99;
   font-family: Narin;
+
 }
 #nav_part1 > svg {
   width: 10rem;
@@ -226,7 +227,7 @@ body::-webkit-scrollbar {
 }
 .link {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
   margin: 0rem 2.5rem;
   font-family: Narin;
@@ -252,6 +253,89 @@ body::-webkit-scrollbar {
   width: 2rem;
   transform: translateY(-0.05rem);
 }
+/* <<-------------------------------------------------->> */
+/* <<--------------------menu section------------------>> */
+/* <<-------------------------------------------------->> */
+
+
+menu{
+  position: absolute;
+  width: 100vw;
+  height: 0;
+  z-index: 34;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: .4s linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 81.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%);
+  overflow: hidden;
+}
+menu >ul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-grow: 1;
+  width: 100vw;
+}
+.menu_link {
+  color: #fff;
+  font-family: Narin;
+  font-weight: 800;
+  font-size: 12rem;
+  line-height: 10rem;
+  letter-spacing: -.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: .2s;
+  opacity: 1;
+}
+.menu_link:hover {
+  color: #e7e7e7 !important;
+  letter-spacing: -1rem !important;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-thickness: .2rem;
+}
+#logo_section{
+  height: 12rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: 3rem;
+  font-family: Narin;
+}
+#contact_logos_menu{
+  display: flex;
+  flex-direction: row;
+  /* height: 100%; */
+  transform: translateY(-1rem);
+  align-items: center;
+  justify-content: center;
+  margin-left: 3rem;
+
+}
+/* menu{
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 34;
+  background-color: #000;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* <<-------------------------------------------------->> */
 /* <<---------------------SECTION-2------------------->> */
@@ -330,6 +414,7 @@ body::-webkit-scrollbar {
   grid-row-start: 1;
   grid-row-end: 3;
   position: relative;
+  background: #d30000;
 }
 #main_image_box > img {
   width: 28vw;
