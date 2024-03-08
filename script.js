@@ -2,41 +2,11 @@ let scroll = new LocomotiveScroll({
   el: document.querySelector("#main"),
   smooth: true,
   smoothMobile: true,
-getSpeed: true,
+  getSpeed: true,
 });
 
 
 
-
-// document.body.style.overflow = 'hidden';
-// function moving_courser() {
-// let main_about_box = document.querySelector("#main_about_box");
-// let hey_btn = document.querySelector("#hey");
-//   main_about_box.addEventListener("mouseenter", function () {
-//     gsap.to(hey_btn, {
-//       scale: 1,
-//       opacity: 1,
-//       delay: .2,
-//       transition:.1
-//     });
-//   });
-//   main_about_box.addEventListener("mouseleave", function () {
-//     gsap.to(hey_btn, {
-//       scale: 0,
-//       opacity: 0,
-//       delay: .2,
-//       transition:.1
-//     });
-//   });
-//   main_about_box.addEventListener("mousemove", function (dets) {
-//     gsap.to(hey_btn, {
-//       left: (dets.x -80 ),
-//       top: (dets.y -80)
-//     });
-//   });
-
-// }
-// moving_courser();
 
 let home_bg_img = document.getElementById("home_bg_img");
 let info_box = document.getElementsByClassName("info_box");
@@ -282,3 +252,18 @@ function menu_work() {
   }
 }
 menu_work()
+
+function link(element){
+  console.log(element.innerHTML)
+  if (element.innerHTML == "CONTACT") {
+    document.getElementById('section5').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }else
+  if (element.innerHTML == "PROJECTS") {
+    document.getElementById('section3').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+  if (element.innerHTML == "ABOUT") {
+    document.getElementById('section2').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+}
+
+

@@ -66,6 +66,7 @@ html {
 }
 body{
   background: #ffffff;
+  height: fit-content;
 }
 
 
@@ -296,11 +297,12 @@ menu >ul{
   display: flex;
   flex-direction: row;
   /* height: 100%; */
+  position: relative;
   transform: translateY(-1rem);
   align-items: center;
   justify-content: center;
   margin-left: 3rem;
-
+  z-index: 2;
 }
 
 
