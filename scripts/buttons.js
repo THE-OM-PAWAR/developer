@@ -127,15 +127,15 @@ let prj_array = [
     prj_info: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
     temporibus?`,
     alert_span: `click image to check-out`,
-  }
+  },
 ];
 
-prj_array.forEach(element => {
-    let main_projects_box = document.getElementById("main_projects_box")
-
-    let pre_prj_box1 = document.createElement("div")
-    pre_prj_box1.classList.add("pre_prj_box")
-    pre_prj_box1.innerHTML = `
+let main_projects_box = document.getElementById("main_projects_box");
+prj_array.forEach((element, index) => {
+  let pre_prj_box1 = document.createElement("div");
+  pre_prj_box1.classList.add("pre_prj_box");
+  pre_prj_box1.id = `pre_prj_box${index}`;
+  pre_prj_box1.innerHTML = `
     <a href="${element.prj_link}">
       <img
         data-scroll
@@ -183,7 +183,60 @@ prj_array.forEach(element => {
         ${element.prj_info}<br><span>${element.alert_span}</span>
         </p>
       </div>
-  </div>`
-  main_projects_box.appendChild(pre_prj_box1)
+  </div>`;
+  main_projects_box.appendChild(pre_prj_box1);
 });
 
+let nav_btn_right = document.getElementById("nav_btn_right");
+let nav_btn_left = document.getElementById("nav_btn_left");
+let value = main_projects_box.offsetHeight;
+
+// main_projects_box.addEventListener("scrollend", () => {
+//     value-=main_projects_box.offsetHeight,
+//     console.log(value)
+//   console.log("katham");
+//   return;
+// });
+let idt2 = false;
+nav_btn_right.addEventListener("click", function () {
+  let idt = false;
+  if (value > main_projects_box.scrollTop + main_projects_box.offsetHeight) {
+    value = main_projects_box.scrollTop;
+    idt = true;
+    idt2 = true;
+  }
+  if (idt2 == false) {
+    value = main_projects_box.scrollTop + main_projects_box.offsetHeight
+  }
+  main_projects_box.scroll({
+    top: value,
+    left: 0,
+    behavior: "smooth",
+  });
+  console.log(value + ":scrolled value" + main_projects_box.scrollTop);
+  value += main_projects_box.offsetHeight;
+  if (idt == true) {
+    value = main_projects_box.scrollTop + 1;
+  }
+});
+nav_btn_left.addEventListener("click", function () {
+  if (value < 0) {
+    value = main_projects_box.offsetHeight;
+  }
+  if (idt2 == true) {
+    value = main_projects_box.scrollTop
+  }
+  if (idt2 == false) {
+    value = main_projects_box.scrollTop
+  }
+  main_projects_box.scroll({
+    top: value - main_projects_box.offsetHeight,
+    left: 0,
+    behavior: "smooth",
+  });
+  console.log(value - main_projects_box.offsetHeight + ":scrolled value");
+  value -= main_projects_box.offsetHeight;
+  if (value < 0) {
+    value = main_projects_box.offsetHeight;
+  }
+});

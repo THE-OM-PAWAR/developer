@@ -3,18 +3,21 @@
   src: url("fonts_file/nunitoWOFF2/Nunito-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
+  font-display: block;
 }
 @font-face {
   font-family: "Nunito";
   src: url("fonts_file/nunitoWOFF2/Nunito-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
+  font-display: block;
 }
 @font-face {
   font-family: "Nunito";
   src: url("fonts_file/nunitoWOFF2/Nunito-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+  font-display: block;
 }
 
 @font-face {
@@ -22,36 +25,42 @@
   src: url("fonts_file/narinWOFF2/NarinLight.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
+  font-display: block;
 }
 @font-face {
   font-family: "Narin";
   src: url("fonts_file/narinWOFF2/NarinBlack.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
+  font-display: block;
 }
 @font-face {
   font-family: "Narin";
   src: url("fonts_file/narinWOFF2/NarinBold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
+  font-display: block;
 }
 @font-face {
   font-family: "Narin";
   src: url("fonts_file/narinWOFF2/NarinMedium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
+  font-display: block;
 }
 @font-face {
   font-family: "Narin";
   src: url("fonts_file/narinWOFF2/NarinRegular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+  font-display: block;
 }
 @font-face {
   font-family: "Narin";
   src: url("fonts_file/narinWOFF2/NarinThin.woff2") format("woff2");
   font-weight: 200;
   font-style: normal;
+  font-display: block;
 }
 
 * {
@@ -533,11 +542,11 @@ menu > ul {
   justify-content: space-evenly;
   flex-wrap: wrap;
   overflow: hidden;
+  transition: .5s;
 }
 .pre_prj_box {
   height: 100%;
   width: 31%;
-  margin: 0.2rem;
   overflow: hidden;
   position: relative;
   max-width: 52rem;

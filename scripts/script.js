@@ -3,7 +3,7 @@ let scroll = new LocomotiveScroll({
   smooth: true,
   smoothMobile: true,
   getSpeed: true,
-  multiplier: 2,
+  multiplier: 1.4,
 });
 
 
