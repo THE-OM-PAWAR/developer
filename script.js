@@ -3,6 +3,7 @@ let scroll = new LocomotiveScroll({
   smooth: true,
   smoothMobile: true,
   getSpeed: true,
+  multiplier: 2,
 });
 
 
@@ -253,17 +254,17 @@ function menu_work() {
 }
 menu_work()
 
-function link(element){
-  console.log(element.innerHTML)
-  if (element.innerHTML == "CONTACT") {
-    document.getElementById('section5').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-  }else
-  if (element.innerHTML == "PROJECTS") {
-    document.getElementById('section3').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-  }
-  if (element.innerHTML == "ABOUT") {
-    document.getElementById('section2').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-  }
-}
+// function link(element){
+//   console.log(element.innerHTML)
+//   if (element.innerHTML == "CONTACT") {
+//     document.getElementById('section5').scrollIntoView({behavior: "smooth", inline: "nearest"});
+//   }else
+//   if (element.innerHTML == "PROJECTS") {
+//     document.getElementById('section3').scrollIntoView({behavior: "smooth", inline: "nearest"});
+//   }
+//   if (element.innerHTML == "ABOUT") {
+//     document.getElementById('section2').scrollIntoView({behavior: "smooth", inline: "nearest"});
+//   }
+// }
 
 
