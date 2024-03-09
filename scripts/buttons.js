@@ -98,7 +98,7 @@ let prj_array = [
   },
   {
     prj_link: "/",
-    img_src: "pic4.jpg",
+    img_src: "pic4.png",
     prj_box_head: "RK Coaching classes",
     prj_info: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
     temporibus?`,
@@ -114,7 +114,7 @@ let prj_array = [
   },
   {
     prj_link: "/",
-    img_src: "pic4.jpg",
+    img_src: "pic4.png",
     prj_box_head: "RK Coaching classes",
     prj_info: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
     temporibus?`,
@@ -136,7 +136,6 @@ prj_array.forEach(element => {
     let pre_prj_box1 = document.createElement("div")
     pre_prj_box1.classList.add("pre_prj_box")
     pre_prj_box1.innerHTML = `
-    <div class="pre_prj_box" id="pre_prj_box1">
     <a href="${element.prj_link}">
       <img
         data-scroll
@@ -184,7 +183,6 @@ prj_array.forEach(element => {
         ${element.prj_info}<br><span>${element.alert_span}</span>
         </p>
       </div>
-    </div>
   </div>`
   main_projects_box.appendChild(pre_prj_box1)
 });
