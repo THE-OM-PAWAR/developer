@@ -260,7 +260,7 @@ menu_work()
 function link(element){
   console.log(element.innerHTML)
   if (element.innerHTML == "CONTACT") {
-    let section5 = document.getElementById('section5').scrollIntoView({behavior: "smooth", inline: "nearest"});
+     document.getElementById('section5').scrollIntoView({behavior: "smooth", inline: "nearest"});
   }else
   if (element.innerHTML == "PROJECTS") {
     document.getElementById('section3').scrollIntoView({behavior: "smooth", inline: "nearest"});
