@@ -63,6 +63,7 @@
   font-display: block;
 }
 
+body::-webkit-scrollbar {display: none;}
 * {
   padding: 0;
   margin: 0;
@@ -77,6 +78,7 @@ body {
   background: #ffffff;
   height: fit-content;
   position: relative;
+  overflow: hidden;
 }
 #background{
   position: fixed;
@@ -136,6 +138,7 @@ body {
   /* scroll-behavior: smooth; */
   overflow-x: hidden;
   backdrop-filter: blur(1rem);
+  overflow: hidden;
 }
 
 .heading {
@@ -227,7 +230,8 @@ body::-webkit-scrollbar {
   margin: 0 0.5rem 0 0;
   border: 0.2rem solid white;
   border-radius: 20rem;
-  background-color: #0000002f;
+  background-color: #ffffff56;
+  backdrop-filter: blur(1rem);
   font-family: Narin;
   font-weight: 800;
   font-size: 1.6rem;
@@ -613,7 +617,7 @@ menu > ul {
 .prj_caption_box {
   width: 80%;
   max-width: 33em;
-  background: #f3f3f3;
+  /* background: #f3f3f3; */
   /* position: absolute;
   top: 50%;
   left: 50%;
@@ -625,7 +629,8 @@ menu > ul {
 }
 .prj_caption_head {
   border-radius: 2em;
-  background: #ffffff;
+  background: #ffffffbb;
+  backdrop-filter: blur(1rem);
   position: relative;
   width: 100%;
   height: 100%;
@@ -1267,7 +1272,7 @@ footer > div > div {
   #EXTRA_head {
 
     font-size: 5rem;
-    color: #d30000;
+    color: #00000044;
     width: 100vw;
     line-height: 5rem;
   }

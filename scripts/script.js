@@ -3,7 +3,8 @@ let scroll = new LocomotiveScroll({
   smooth: true,
   smoothMobile: true,
   getSpeed: true,
-  multiplier: 1.4,
+  multiplier: 1,
+  lerp: .2
 });
 
 
@@ -121,6 +122,7 @@ function menu_work() {
       menuBTN.classList.remove("not_clicked")
       document.body.style.overflow = 'hidden';
       scroll.stop();
+      document.querySelector("menu").style.zIndex="34"
       document.querySelector("menu").style.height="100vh"
       document.querySelectorAll(".link").forEach(element => {
         element.style.color = "#fff"
@@ -191,6 +193,7 @@ function menu_work() {
       menuBTN.classList.add("not_clicked")
       document.body.style.overflow = 'initial';
       scroll.start();
+      document.querySelector("menu").style.zIndex="0"
       document.querySelector("menu").style.height="0vh"
       document.querySelectorAll(".link").forEach(element => {
         element.style.color = "#000"
@@ -254,18 +257,18 @@ function menu_work() {
 }
 menu_work()
 
-// function link(element){
-//   console.log(element.innerHTML)
-//   if (element.innerHTML == "CONTACT") {
-//     document.getElementById('section5').scrollIntoView({behavior: "smooth", inline: "nearest"});
-//   }else
-//   if (element.innerHTML == "PROJECTS") {
-//     document.getElementById('section3').scrollIntoView({behavior: "smooth", inline: "nearest"});
-//   }
-//   if (element.innerHTML == "ABOUT") {
-//     document.getElementById('section2').scrollIntoView({behavior: "smooth", inline: "nearest"});
-//   }
-// }
+function link(element){
+  console.log(element.innerHTML)
+  if (element.innerHTML == "CONTACT") {
+    let section5 = document.getElementById('section5').scrollIntoView({behavior: "smooth", inline: "nearest"});
+  }else
+  if (element.innerHTML == "PROJECTS") {
+    document.getElementById('section3').scrollIntoView({behavior: "smooth", inline: "nearest"});
+  }else
+  if (element.innerHTML == "ABOUT") {
+    document.getElementById('section2').scrollIntoView({behavior: "smooth", inline: "nearest"});
+  }
+}
 
 
 
