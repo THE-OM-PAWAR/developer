@@ -76,8 +76,49 @@ html {
 body {
   background: #ffffff;
   height: fit-content;
+  position: relative;
 }
-
+#background{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+#background > #bg1{
+  position: relative;
+  top: 10%;
+  left:10% ;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 20rem;
+  background: #d3cdcd63;
+}
+#background > #bg2{
+  position: relative;
+  top: 5%;
+  left:20% ;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 20rem;
+  background: #dad5d552;
+}
+#background > #bg3{
+  position: relative;
+  top: 2%;
+  left:-10% ;
+  width: 25vw;
+  height: 25vw;
+  border-radius: 20rem;
+  background: #dbd6d667;
+}
+#background > #bg4{
+  position: relative;
+  top: 1%;
+  left:30% ;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 20rem;
+  background: #cabcbc88;
+}
 #coursor {
   height: 15rem;
   width: 15rem;
@@ -90,9 +131,11 @@ body {
 
 #main {
   /* position: relative; */
+  z-index: 2;
   background-color: #00000000;
   /* scroll-behavior: smooth; */
   overflow-x: hidden;
+  backdrop-filter: blur(1rem);
 }
 
 .heading {
@@ -150,7 +193,7 @@ body::-webkit-scrollbar {
   height: 26rem;
   margin: 0 2.5rem;
   overflow: hidden;
-  border-radius: 2.5rem;
+  /* border-radius: 2.5rem; */
 }
 .info_box > img {
   position: absolute;
@@ -184,7 +227,7 @@ body::-webkit-scrollbar {
   margin: 0 0.5rem 0 0;
   border: 0.2rem solid white;
   border-radius: 20rem;
-  background-color: #ffffff2f;
+  background-color: #0000002f;
   font-family: Narin;
   font-weight: 800;
   font-size: 1.6rem;
@@ -254,7 +297,8 @@ menu {
   width: 100vw;
   height: 0;
   z-index: 34;
-  background-color: #000;
+  background-color: #000000ee;
+  backdrop-filter: blur(4rem);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -357,7 +401,7 @@ menu > ul {
   position: relative;
   display: flex;
   width: 100vw;
-  background: #d30000;
+  background: #000000;
   min-height: 100vh;
 }
 
@@ -474,13 +518,13 @@ menu > ul {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  mix-blend-mode: hard-light;
+  mix-blend-mode: screen;
   z-index: 1;
 }
 #main_image_box > div {
   height: 100%;
   width: 28vw;
-  background: #d30000;
+  background: #000000;
 }
 #main_image_box > svg {
   width: 20vw;
@@ -702,9 +746,10 @@ menu > ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0.671);
   border-radius: 20rem;
   padding: 0.4rem;
+  backdrop-filter: blur(.4rem);
 }
 
 .discription {
@@ -819,7 +864,7 @@ menu > ul {
   position: relative;
   margin: 2rem 1vw;
   border-radius: 2rem;
-  border: 0.2rem solid #d30000;
+  /* border: 0.2rem solid #00000028; */
   height: 36rem;
   width: 36rem;
   display: flex;
@@ -905,17 +950,18 @@ menu > ul {
 }
 #EXTRA_head {
   font-family: Narin;
-  font-size: 6.5vw;
+  font-size: 6vw;
   /* letter-spacing: -0.6rem; */
-  /* font-weight: 800; */
-  color: #f0f0f0;
+  font-weight: 800;
+  color: #00000044;
   text-transform: uppercase;
-  height: auto;
+  /* height: auto; */
   text-wrap: nowrap;
   width: 60vw;
   margin: auto;
-  transform: translateY(8rem);
-  line-height: 9rem;
+  /* transform: translateY(100rem); */
+  margin-top: 8rem;
+  line-height: 2rem;
 }
 .extra {
   position: relative;
@@ -932,7 +978,7 @@ menu > ul {
 }
 .extra p {
   margin: auto;
-  padding: 8rem;
+  padding: 1rem 8rem;
   width: 50vw;
 }
 footer {
@@ -1219,8 +1265,9 @@ footer > div > div {
   }
 
   #EXTRA_head {
+
     font-size: 5rem;
-    color: #ffffff;
+    color: #d30000;
     width: 100vw;
     line-height: 5rem;
   }
