@@ -78,7 +78,7 @@ body {
   background: #ffffff;
   height: fit-content;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 #background{
   position: fixed;
@@ -135,10 +135,10 @@ body {
   /* position: relative; */
   z-index: 2;
   background-color: #00000000;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
   overflow-x: hidden;
   backdrop-filter: blur(1rem);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .heading {

@@ -1,7 +1,7 @@
 let scroll = new LocomotiveScroll({
   el: document.querySelector("#main"),
   smooth: true,
-  smoothMobile: true,
+  // smoothMobile: true,
   getSpeed: true,
   multiplier: 1,
   lerp: .2
