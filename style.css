@@ -577,6 +577,7 @@ menu > ul {
   line-height: 16.6rem;
   text-align: left;
   margin-left: 4vw;
+  margin-top: 8rem;
 }
 
 #main_projects_box {
@@ -618,10 +619,10 @@ menu > ul {
   width: 80%;
   max-width: 33em;
   /* background: #f3f3f3; */
-  /* position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50% , -50%); */
+  transform: translate(-50% , -50%);
   border-radius: 2em;
   height: 4em;
   font-family: Nunito;
@@ -793,7 +794,7 @@ menu > ul {
   position: relative;
   transform: translateY(1.4rem);
   /* z-index: 12; */
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 #tech_stack_strip {
   position: relative;
@@ -894,7 +895,6 @@ menu > ul {
   font-weight: 800;
   line-height: 31px;
   letter-spacing: -0.04em;
-
   text-align: center;
 }
 .logo_box {
@@ -988,7 +988,7 @@ menu > ul {
 }
 footer {
   width: 100vw;
-  height: 60vh;
+  height: 50vh;
 }
 footer > div {
   width: 100%;
@@ -999,7 +999,7 @@ footer > div > svg {
   width: 30%;
   height: 30%;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: 0.3s;
