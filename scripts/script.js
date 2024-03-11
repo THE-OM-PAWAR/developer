@@ -22,6 +22,14 @@ function loading_animation() {
     delay: 0.3,
     scale: 20,
   });
+  gsap.from("#background>div", {
+    y: 150,
+    opacity: 0,
+    duration: .2,
+    stagger: 0.1,
+    delay: 1.5,
+    scale: 0,
+  });
   gsap.from(info_box, {
     y: 10,
     opacity: 0,
@@ -86,7 +94,7 @@ function mousemove_ani() {
   })
   document.querySelector("footer>div>svg").addEventListener("mouseenter" ,function(){
     gsap.to("#coursor",{
-      scale:3,
+      scale:2.5,
       transform: 'translate(-50% ,-50%) scale(1)'
     })
   })

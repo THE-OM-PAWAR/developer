@@ -80,55 +80,64 @@ body {
   position: relative;
   /* overflow: hidden; */
 }
+#background >div{
+  position: relative;
+  border-radius: 20rem;
+  background: #ffd1d175;
+  background: #dad0d0bb;
+  filter: blur(1.5rem);
+  scale: 1;
+}
 #background{
   position: fixed;
   width: 100vw;
   height: 100vh;
 }
 #background > #bg1{
-  position: relative;
-  top: 10%;
+  top: 5%;
   left:10% ;
-  width: 10vw;
-  height: 10vw;
-  border-radius: 20rem;
-  background: #d3cdcd63;
+  width: 10rem;
+  height: 10rem;
+  animation: gelly 3s linear infinite alternate ;
 }
 #background > #bg2{
-  position: relative;
   top: 5%;
   left:20% ;
-  width: 15vw;
-  height: 15vw;
-  border-radius: 20rem;
-  background: #dad5d552;
+  width: 15rem;
+  height: 15rem;
+  animation: gelly 3.5s linear infinite alternate ;
 }
 #background > #bg3{
-  position: relative;
   top: 2%;
-  left:-10% ;
-  width: 25vw;
-  height: 25vw;
-  border-radius: 20rem;
-  background: #dbd6d667;
+  left:80% ;
+  width: 25rem;
+  height: 25rem;
+  animation: gelly 4s linear infinite alternate-reverse ;
 }
 #background > #bg4{
-  position: relative;
-  top: 1%;
-  left:30% ;
-  width: 10vw;
-  height: 10vw;
-  border-radius: 20rem;
-  background: #cabcbc88;
+  bottom: 8%;
+  left:3% ;
+  width: 10rem;
+  height: 10rem;
+  animation: gelly 5s linear infinite alternate-reverse ;
 }
 #coursor {
   height: 15rem;
   width: 15rem;
-  background-color: #ebebeb;
+  background-color: #dad0d0bb;
   border-radius: 50%;
+  filter: blur(1.5rem);
   position: fixed;
   transform: translate(-50%, -50%) scale(1);
   opacity: 0;
+}
+@keyframes gelly {
+  0%{
+    transform: translate( 10% , -10%) skew(-10deg);
+  }
+  100%{
+    transform: translate( -10% , 10%) skew(-5deg);
+  }
 }
 
 #main {
@@ -630,7 +639,8 @@ menu > ul {
 }
 .prj_caption_head {
   border-radius: 2em;
-  background: #ffffffbb;
+  background: #ffffffb0;
+  border: .3rem solid white;
   backdrop-filter: blur(1rem);
   position: relative;
   width: 100%;
@@ -641,6 +651,7 @@ menu > ul {
   justify-content: space-between;
   font-weight: 500;
   z-index: 12;
+  
 }
 .live_box {
   margin: 1em;
@@ -756,6 +767,12 @@ menu > ul {
   border-radius: 20rem;
   padding: 0.4rem;
   backdrop-filter: blur(.4rem);
+}
+#nav_btn_left >svg{
+  transform: rotate(-90deg);
+}
+#nav_btn_right >svg{
+  transform: rotate(90deg);
 }
 
 .discription {
@@ -1228,6 +1245,34 @@ footer > div > div {
   }
   .pre_prj_box {
     font-size: 8.2px;
+  }
+  #background >div{
+    filter: blur(2.5rem);
+    opacity: .7;
+  }
+  #background > #bg1{
+    top: 5%;
+    left:10% ;
+    width: 20rem;
+    height: 20rem;
+  }
+  #background > #bg2{
+    top: 5%;
+    left:20% ;
+    width: 25rem;
+    height: 25rem;
+  }
+  #background > #bg3{
+    top: 2%;
+    left:80% ;
+    width: 35rem;
+    height: 35rem;
+  }
+  #background > #bg4{
+    bottom: 8%;
+    left:3% ;
+    width: 15rem;
+    height: 15rem;
   }
 }
 @media screen and (max-width: 600px) {

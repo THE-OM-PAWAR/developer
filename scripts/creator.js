@@ -1,7 +1,15 @@
 let prj_array = [
     {
       prj_link: "/",
-      img_src: "pic5.jpg",
+      img_src: "notes.png",
+      prj_box_head: "Real time chats",
+      prj_info: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+      temporibus?`,
+      alert_span: `click image to check-out`,
+    },
+    {
+      prj_link: "/",
+      img_src: "RK poster.png",
       prj_box_head: "RK Coaching classes",
       prj_info: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
       temporibus?`,
@@ -9,7 +17,7 @@ let prj_array = [
     },
     {
       prj_link: "/",
-      img_src: "pic2.jpg",
+      img_src: "farm.png",
       prj_box_head: "RK Coaching classes",
       prj_info: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
       temporibus?`,
@@ -17,7 +25,7 @@ let prj_array = [
     },
     {
       prj_link: "/",
-      img_src: "pic4.png",
+      img_src: "MSG app.png",
       prj_box_head: "RK Coaching classes",
       prj_info: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
       temporibus?`,
@@ -25,7 +33,7 @@ let prj_array = [
     },
     {
       prj_link: "/",
-      img_src: "pic2.jpg",
+      img_src: "vector.png",
       prj_box_head: "RK Coaching classes",
       prj_info: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
       temporibus?`,
@@ -33,15 +41,7 @@ let prj_array = [
     },
     {
       prj_link: "/",
-      img_src: "pic4.png",
-      prj_box_head: "RK Coaching classes",
-      prj_info: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
-      temporibus?`,
-      alert_span: `click image to check-out`,
-    },
-    {
-      prj_link: "/",
-      img_src: "pic5.jpg",
+      img_src: "tic.png",
       prj_box_head: "RK Coaching classes",
       prj_info: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
       temporibus?`,
