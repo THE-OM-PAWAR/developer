@@ -619,7 +619,7 @@ menu > ul {
   width: 80%;
   max-width: 33em;
   /* background: #f3f3f3; */
-  position: absolute;
+  /* position: absolute;  */
   top: 50%;
   left: 50%;
   transform: translate(-50% , -50%);
@@ -1231,8 +1231,12 @@ footer > div > div {
   }
 }
 @media screen and (max-width: 600px) {
+.prj_caption_box {
+  position: absolute;  
+}
   .pre_prj_box {
     width: 90%;
+
   }
   .pre_prj_box {
     font-size: 8px;
