@@ -4,11 +4,8 @@ let scroll = new LocomotiveScroll({
   // smoothMobile: true,
   getSpeed: true,
   multiplier: 1,
-  lerp: .2
+  lerp: 0.2,
 });
-
-
-
 
 let home_bg_img = document.getElementById("home_bg_img");
 let info_box = document.getElementsByClassName("info_box");
@@ -25,7 +22,7 @@ function loading_animation() {
   gsap.from("#background>div", {
     y: 150,
     opacity: 0,
-    duration: .2,
+    duration: 0.2,
     stagger: 0.1,
     delay: 1.5,
     scale: 0,
@@ -50,100 +47,119 @@ function loading_animation() {
 loading_animation();
 
 function mousemove_ani() {
-  document.addEventListener("mousemove" , function(dets){
-    gsap.to("#coursor",{
-      opacity:1,
+  document.addEventListener("mousemove", function (dets) {
+    gsap.to("#coursor", {
+      opacity: 1,
       left: dets.x,
-      top:dets.y,
-    })
-  })
-  
-  document.querySelector("#main_about_box").addEventListener("mouseenter" ,function(){
-    gsap.to("#coursor",{
-      transform: 'translate(-50% ,-50%) scale(0)'
-    })
-  })
-  document.querySelector("#main_about_box").addEventListener("mouseleave" ,function(){
-    gsap.to("#coursor",{
-      transform: 'translate(-50% ,-50%) scale(1)'
-    })
-  })
-  document.querySelector(".main_projects_box").addEventListener("mouseenter" ,function(){
-    gsap.to("#coursor",{
-  
-      transform: 'translate(-50% ,-50%) scale(0)'
-    })
-  })
-  document.querySelector(".main_projects_box").addEventListener("mouseleave" ,function(){
-    gsap.to("#coursor",{
-      transform: 'translate(-50% ,-50%) scale(1)'
-    })
-  })
-  
-  document.querySelector("#card_box").addEventListener("mouseenter" ,function(){
-    gsap.to("#coursor",{
-      scale:3,
-      transform: 'translate(-50% ,-50%) scale(1)'
-    })
-  })
-  document.querySelector("#card_box").addEventListener("mouseleave" ,function(){
-    gsap.to("#coursor",{
-      scale:1,
-      transform: 'translate(-50% ,-50%) scale(1)'
-    })
-  })
-  document.querySelector("footer>div>svg").addEventListener("mouseenter" ,function(){
-    gsap.to("#coursor",{
-      scale:2.5,
-      transform: 'translate(-50% ,-50%) scale(1)'
-    })
-  })
-  
-  document.querySelector("footer>div>svg").addEventListener("mouseleave" ,function(){
-    gsap.to("#coursor",{
-      scale:1,
-      transform: 'translate(-50% ,-50%) scale(1)'
-    })
-  })
-  document.querySelector("#menuBTN").addEventListener("mouseenter" ,function(){
-    gsap.to("#coursor",{
-      scale:.05,
-      transform: 'translate(-50% ,-50%) scale(1)'
-    })
-  })
-  
-  document.querySelector("#menuBTN").addEventListener("mouseleave" ,function(){
-    gsap.to("#coursor",{
-      scale:1,
-      transform: 'translate(-50% ,-50%) scale(1)'
-    })
-  })
+      top: dets.y,
+    });
+  });
 
-  
-}  
-mousemove_ani()
+  document
+    .querySelector("#main_about_box")
+    .addEventListener("mouseenter", function () {
+      gsap.to("#coursor", {
+        transform: "translate(-50% ,-50%) scale(0)",
+      });
+    });
+  document
+    .querySelector("#main_about_box")
+    .addEventListener("mouseleave", function () {
+      gsap.to("#coursor", {
+        transform: "translate(-50% ,-50%) scale(1)",
+      });
+    });
+  document
+    .querySelector(".main_projects_box")
+    .addEventListener("mouseenter", function () {
+      gsap.to("#coursor", {
+        transform: "translate(-50% ,-50%) scale(0)",
+      });
+    });
+  document
+    .querySelector(".main_projects_box")
+    .addEventListener("mouseleave", function () {
+      gsap.to("#coursor", {
+        transform: "translate(-50% ,-50%) scale(1)",
+      });
+    });
 
+  document
+    .querySelector("#card_box")
+    .addEventListener("mouseenter", function () {
+      gsap.to("#coursor", {
+        scale: 3,
+        transform: "translate(-50% ,-50%) scale(1)",
+      });
+    });
+  document
+    .querySelector("#card_box")
+    .addEventListener("mouseleave", function () {
+      gsap.to("#coursor", {
+        scale: 1,
+        transform: "translate(-50% ,-50%) scale(1)",
+      });
+    });
+  document
+    .querySelector("footer>div>svg")
+    .addEventListener("mouseenter", function () {
+      gsap.to("#coursor", {
+        scale: 2.5,
+        transform: "translate(-50% ,-50%) scale(1)",
+      });
+    });
+
+  document
+    .querySelector("footer>div>svg")
+    .addEventListener("mouseleave", function () {
+      gsap.to("#coursor", {
+        scale: 1,
+        transform: "translate(-50% ,-50%) scale(1)",
+      });
+    });
+  document
+    .querySelector("#menuBTN")
+    .addEventListener("mouseenter", function () {
+      gsap.to("#coursor", {
+        scale: 0.05,
+        transform: "translate(-50% ,-50%) scale(1)",
+      });
+    });
+
+  document
+    .querySelector("#menuBTN")
+    .addEventListener("mouseleave", function () {
+      gsap.to("#coursor", {
+        scale: 1,
+        transform: "translate(-50% ,-50%) scale(1)",
+      });
+    });
+}
+mousemove_ani();
+
+let menuBTN = document.getElementById("menuBTN");
+menuBTN.onclick = () => {
+  menu_work();
+};
 function menu_work() {
-  let menuBTN = document.getElementById("menuBTN")
-  menuBTN.onclick = ()=>{
-    if (menuBTN.classList.contains("not_clicked")) {
-      menuBTN.classList.remove("not_clicked")
-      document.body.style.overflow = 'hidden';
-      scroll.stop();
-      document.querySelector("menu").style.zIndex="34"
-      document.querySelector("menu").style.height="100vh"
-      document.querySelectorAll(".link").forEach(element => {
-        element.style.color = "#fff"
-      });
-      gsap.from("menu >ul>li", {
-        y: 20,
-        opacity: .5,
-        duration: 0.5,
-        stagger: 0.2,
-        delay: .5,
-      });
-      
-        document.querySelector("#nav_part1").innerHTML = `        <svg
+  if (menuBTN.classList.contains("not_clicked")) {
+    menuBTN.classList.remove("not_clicked");
+    document.body.style.overflow = "hidden";
+    scroll.stop();
+    document.querySelector("menu").style.zIndex = "34";
+    document.querySelector("menu").style.height = "100vh";
+    document.querySelectorAll(".link").forEach((element) => {
+      element.style.color = "#fff";
+    });
+    gsap.from("menu >ul>li", {
+      y: 20,
+      opacity: 0.5,
+      duration: 0.5,
+      stagger: 0.2,
+      delay: 0.5,
+    });
+
+    document.querySelector("#nav_part1").innerHTML = `        <svg
         width="125"
         height="75"
         viewBox="0 0 125 75"
@@ -194,19 +210,17 @@ function menu_work() {
           d="M6.37868 0.218262C10.6933 0.218262 13.7959 3.56329 13.7959 8.02332C13.7959 13.6226 9.86914 17.1858 4.87584 17.1858H0.197653C0.076457 17.1858 -0.0205001 17.0888 0.00373918 16.9676L2.03984 0.387938C2.06408 0.29098 2.1368 0.218262 2.23376 0.218262H6.37868ZM4.8516 16.701C8.94804 16.701 13.2142 13.9377 13.2142 8.04756C13.2142 3.53905 10.0388 0.703049 6.3302 0.703049H2.54887L0.585483 16.701H4.8516Z"
           fill="#fff"
         />
-      </svg>`
-        
-
-    }else{
-      menuBTN.classList.add("not_clicked")
-      document.body.style.overflow = 'initial';
-      scroll.start();
-      document.querySelector("menu").style.zIndex="0"
-      document.querySelector("menu").style.height="0vh"
-      document.querySelectorAll(".link").forEach(element => {
-        element.style.color = "#000"
-      });
-      document.querySelector("#nav_part1").innerHTML = `        <svg
+      </svg>`;
+  } else {
+    menuBTN.classList.add("not_clicked");
+    document.body.style.overflow = "initial";
+    scroll.start();
+    document.querySelector("menu").style.zIndex = "0";
+    document.querySelector("menu").style.height = "0vh";
+    document.querySelectorAll(".link").forEach((element) => {
+      element.style.color = "#000";
+    });
+    document.querySelector("#nav_part1").innerHTML = `        <svg
       width="125"
       height="75"
       viewBox="0 0 125 75"
@@ -257,27 +271,64 @@ function menu_work() {
         d="M6.37868 0.218262C10.6933 0.218262 13.7959 3.56329 13.7959 8.02332C13.7959 13.6226 9.86914 17.1858 4.87584 17.1858H0.197653C0.076457 17.1858 -0.0205001 17.0888 0.00373918 16.9676L2.03984 0.387938C2.06408 0.29098 2.1368 0.218262 2.23376 0.218262H6.37868ZM4.8516 16.701C8.94804 16.701 13.2142 13.9377 13.2142 8.04756C13.2142 3.53905 10.0388 0.703049 6.3302 0.703049H2.54887L0.585483 16.701H4.8516Z"
         fill="black"
       />
-    </svg>`
-
-      
-    }
+    </svg>`;
   }
 }
-menu_work()
 
-function link(element){
-  console.log(element.innerHTML)
+
+let pdfUrl = "assets/OM-Resume.pdf"
+function link(element) {
+  let text  = element.innerHTML.toString()
+  if (menuBTN.classList.contains("not_clicked")) {
+    console.log("hello");
+  } else {
+    console.log("hello2");
+    menu_work();
+  }
+  
   if (element.innerHTML == "CONTACT") {
-     document.getElementById('section5').scrollIntoView({behavior: "smooth", inline: "nearest"});
-  }else
-  if (element.innerHTML == "PROJECTS") {
-    document.getElementById('section3').scrollIntoView({behavior: "smooth", inline: "nearest"});
-  }else
-  if (element.innerHTML == "ABOUT") {
-    document.getElementById('section2').scrollIntoView({behavior: "smooth", inline: "nearest"});
+    scroll.scrollTo(document.getElementById("section5"));
+  } else if (element.innerHTML == "PROJECTS") {
+    scroll.scrollTo(document.getElementById("section3"));
+  } else if (element.innerHTML == "ABOUT") {
+    scroll.scrollTo(document.getElementById("section2"));
+  } else if (text.includes("resume")) {
+    window.open(pdfUrl);
   }
 }
 
 
 
 
+
+// Define the URL of the PDF file
+// var pdfUrl = "http://example.com/path/to/your/pdf.pdf";
+
+// Function to trigger the download
+function downloadPdf() {
+  fetch(pdfUrl)
+    .then(response => response.blob())
+    .then(blob => {
+      // Create a blob URL for the PDF data
+      var url = window.URL.createObjectURL(blob);
+
+      // Create a link element to trigger the download
+      var a = document.createElement("a");
+      a.href = url;
+      a.download = "OM-resume.pdf"; // Set the desired file name
+      document.body.appendChild(a);
+
+      // Trigger a click event on the link element to initiate the download
+      a.click();
+
+      // Clean up by revoking the blob URL and removing the link element
+      window.URL.revokeObjectURL(url);
+      document.body.removeChild(a);
+    })
+    .catch(error => {
+      console.error("Failed to download the PDF file: ", error);
+    });
+}
+
+// Call the downloadPdf() function when needed, e.g., in response to a button click
+document.querySelector("#meun_link3 > span").addEventListener("click", downloadPdf);

@@ -12,7 +12,6 @@
     <title>OM-PAWAR</title>
   </head>
   <body>
-
     <div id="background">
       <div id="bg1"></div>
       <div id="bg2"></div>
@@ -22,17 +21,48 @@
     <div id="coursor"></div>
     <menu>
       <ul>
-        <li><a href="/" class="menu_link" id="meun_link1">CONTACT</a></li>
-        <li><a href="/" class="menu_link" id="meun_link2">PROJECTS</a></li>
-        <li><a href="/" class="menu_link" id="meun_link3">resume</a></li>
-        <li><a href="/" class="menu_link" id="meun_link3">ABOUT</a></li>
+        <li>
+          <a onclick="link(this)" class="menu_link" id="meun_link1">CONTACT</a>
+        </li>
+        <li>
+          <a onclick="link(this)" class="menu_link" id="meun_link2">PROJECTS</a>
+        </li>
+        <li>
+          <a onclick="link(this)" class="menu_link" id="meun_link3"
+            >
+             <span
+              ><svg
+                width="310"
+                height="414"
+                viewBox="0 0 310 414"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M176 21C176 9.40202 166.598 0 155 0C143.402 0 134 9.40202 134 21L176 21ZM140.151 343.851C148.352 352.052 161.648 352.052 169.849 343.851L303.492 210.208C311.693 202.007 311.693 188.711 303.492 180.51C295.291 172.309 281.995 172.309 273.794 180.51L155 299.303L36.2061 180.51C28.0051 172.309 14.7086 172.309 6.50758 180.51C-1.69343 188.711 -1.69343 202.007 6.50758 210.208L140.151 343.851ZM134 21L134 329.002H176L176 21L134 21Z"
+                  fill="white"
+                />
+                <path
+                  d="M65.9102 394.001H244.09"
+                  stroke="white"
+                  stroke-width="39"
+                  stroke-linecap="round"
+                />
+              </svg></span
+            >
+            resume</a
+          >
+        </li>
+        <li>
+          <a onclick="link(this)" class="menu_link" id="meun_link3">ABOUT</a>
+        </li>
       </ul>
       <div id="logo_section">
         <div>CONTACT</div>
         <div id="contact_logos_menu">
           <a href="/"
             ><div class="logo_contact">
-              <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                 <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                 <path
                   fill="#fff"
@@ -91,38 +121,47 @@
             fill="black"
           />
           <path
+            class="developer"
             d="M123.4 17.1858C123.352 17.1858 123.279 17.1615 123.255 17.0888L118.819 10.5684H114.698L113.898 17.0161C113.874 17.1131 113.801 17.1858 113.705 17.1858H113.559C113.438 17.1858 113.341 17.0888 113.365 16.9676L115.401 0.387938C115.426 0.29098 115.498 0.218262 115.595 0.218262H120.225C122.867 0.218262 125 2.13317 125 4.99341C125 8.33843 122.479 10.5684 119.425 10.5684L123.788 16.8949C123.909 17.0646 123.837 17.1858 123.643 17.1858H123.4ZM120.176 0.703049H115.91L114.747 10.0837H119.498C121.752 10.0837 124.491 8.50811 124.491 4.99341C124.491 2.23013 122.309 0.703049 120.176 0.703049Z"
             fill="black"
           />
           <path
+            class="developer"
             d="M109.976 17.0161C109.952 17.1131 109.879 17.1858 109.782 17.1858H100.232C100.111 17.1858 100.014 17.0888 100.038 16.9676L102.074 0.387938C102.099 0.29098 102.171 0.218262 102.268 0.218262H111.819C111.94 0.218262 112.037 0.315219 112.012 0.436416V0.533373C111.988 0.630331 111.916 0.703049 111.819 0.703049H102.583L101.638 8.26571H109.734C109.855 8.26571 109.952 8.36267 109.928 8.48387V8.58082C109.904 8.67778 109.831 8.7505 109.734 8.7505H101.59L100.62 16.701H109.807C109.928 16.701 110.001 16.798 110.001 16.9191L109.976 17.0161Z"
             fill="black"
           />
           <path
+            class="developer"
             d="M87.647 17.0161C87.6228 17.1131 87.5501 17.1858 87.4531 17.1858H87.3077C87.1865 17.1858 87.0895 17.0888 87.1138 16.9676L89.1499 0.387938C89.1741 0.29098 89.2468 0.218262 89.3438 0.218262H93.9735C96.6156 0.218262 98.7487 2.13317 98.7487 4.99341C98.7487 8.33843 96.2278 10.5684 93.1736 10.5684H88.4469L87.647 17.0161ZM93.925 0.703049H89.6589L88.4954 10.0837H93.2463C95.5006 10.0837 98.2396 8.50811 98.2396 4.99341C98.2396 2.23013 96.0581 0.703049 93.925 0.703049Z"
             fill="black"
           />
           <path
+            class="developer"
             d="M77.5276 0C81.9876 0 85.066 3.34503 85.066 7.8293C85.066 12.556 81.3089 17.4038 75.9278 17.4038C71.4435 17.4038 68.3893 14.0103 68.3893 9.59877C68.3893 4.3146 72.4373 0 77.5276 0ZM75.9278 16.8706C80.5817 16.8706 84.5327 12.6772 84.5327 7.8293C84.5327 3.19959 81.2362 0.533265 77.5033 0.533265C72.2434 0.533265 68.9226 5.11449 68.9226 9.59877C68.9226 14.0103 72.0495 16.8706 75.9278 16.8706Z"
             fill="black"
           />
           <path
+            class="developer"
             d="M58.2485 16.701H66.3929C66.5141 16.701 66.5868 16.798 66.5868 16.9191L66.5626 17.0161C66.5384 17.1131 66.4656 17.1858 66.3687 17.1858H57.8607C57.7395 17.1858 57.6425 17.0888 57.6668 16.9676L59.7029 0.387938C59.7271 0.29098 59.7998 0.218262 59.8968 0.218262H60.0422C60.1634 0.218262 60.2604 0.315219 60.2361 0.436416L58.2485 16.701Z"
             fill="black"
           />
           <path
+            class="developer"
             d="M54.278 17.0161C54.2538 17.1131 54.1811 17.1858 54.0841 17.1858H44.5338C44.4126 17.1858 44.3157 17.0888 44.3399 16.9676L46.376 0.387938C46.4003 0.29098 46.473 0.218262 46.5699 0.218262H56.1202C56.2414 0.218262 56.3384 0.315219 56.3141 0.436416V0.533373C56.2899 0.630331 56.2172 0.703049 56.1202 0.703049H46.8851L45.9397 8.26571H54.0356C54.1568 8.26571 54.2538 8.36267 54.2296 8.48387V8.58082C54.2053 8.67778 54.1326 8.7505 54.0356 8.7505H45.8912L44.9217 16.701H54.1084C54.2296 16.701 54.3023 16.798 54.3023 16.9191L54.278 17.0161Z"
             fill="black"
           />
           <path
+            class="developer"
             d="M29.9666 0.218262C30.0636 0.218262 30.1363 0.266741 30.1606 0.363699L34.766 16.4344L43.371 0.315219C43.3952 0.266741 43.4679 0.218262 43.5407 0.218262H43.7103C43.88 0.218262 43.9527 0.315219 43.8558 0.484895L34.8872 17.0888C34.863 17.1373 34.7903 17.1858 34.7176 17.1858H34.6691C34.5721 17.1858 34.4994 17.1373 34.4752 17.0403L29.6031 0.460655C29.5546 0.315219 29.6273 0.218262 29.797 0.218262H29.9666Z"
             fill="black"
           />
           <path
+            class="developer"
             d="M25.7779 17.0161C25.7537 17.1131 25.681 17.1858 25.584 17.1858H16.0337C15.9125 17.1858 15.8156 17.0888 15.8398 16.9676L17.8759 0.387938C17.9001 0.29098 17.9729 0.218262 18.0698 0.218262H27.6201C27.7413 0.218262 27.8383 0.315219 27.814 0.436416V0.533373C27.7898 0.630331 27.7171 0.703049 27.6201 0.703049H18.3849L17.4396 8.26571H25.5355C25.6567 8.26571 25.7537 8.36267 25.7294 8.48387V8.58082C25.7052 8.67778 25.6325 8.7505 25.5355 8.7505H17.3911L16.4215 16.701H25.6082C25.7294 16.701 25.8022 16.798 25.8022 16.9191L25.7779 17.0161Z"
             fill="black"
           />
           <path
+            class="developer"
             d="M6.37868 0.218262C10.6933 0.218262 13.7959 3.56329 13.7959 8.02332C13.7959 13.6226 9.86914 17.1858 4.87584 17.1858H0.197653C0.076457 17.1858 -0.0205001 17.0888 0.00373918 16.9676L2.03984 0.387938C2.06408 0.29098 2.1368 0.218262 2.23376 0.218262H6.37868ZM4.8516 16.701C8.94804 16.701 13.2142 13.9377 13.2142 8.04756C13.2142 3.53905 10.0388 0.703049 6.3302 0.703049H2.54887L0.585483 16.701H4.8516Z"
             fill="black"
           />
@@ -130,9 +169,9 @@
       </div>
       <div id="nav_part2">
         <div class="_links">
-          <a onclick="link(this)" class="link" id="link1">CONTACT</a>
-          <a onclick="link(this)" class="link" id="link2">PROJECTS</a>
           <a onclick="link(this)" class="link" id="link3">ABOUT</a>
+          <a onclick="link(this)" class="link" id="link2">PROJECTS</a>
+          <a onclick="link(this)" class="link" id="link1">CONTACT</a>
         </div>
         <div class="menuBTN not_clicked" id="menuBTN">
           <svg
@@ -160,7 +199,9 @@
         </div>
       </div>
     </nav>
+
     <div class="main" id="main">
+      <div id="observer"></div>
       <section class="section" id="section1">
         <img
           id="home_bg_img"
@@ -169,6 +210,40 @@
         />
         <div id="info_box_container">
           <div class="All_info_box" id="All_info_1">
+            <div class="slider_btn" id="slider_btn1">
+              <svg
+                width="900"
+                height="900"
+                viewBox="0 0 900 900"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="Frame 12">
+                  <rect width="900" height="900" fill="transparent" />
+                  <g id="Group 17">
+                    <path
+                      class="ar1"
+                      id="Arrow 6"
+                      d="M592.142 464.142C599.953 456.332 599.953 443.668 592.142 435.858L464.863 308.579C457.052 300.768 444.389 300.768 436.579 308.579C428.768 316.389 428.768 329.052 436.579 336.863L549.716 450L436.579 563.137C428.768 570.948 428.768 583.611 436.579 591.421C444.389 599.232 457.052 599.232 464.863 591.421L592.142 464.142ZM557 470H578V430H557V470Z"
+                      fill="white"
+                    />
+                    <path
+                      class="ar2"
+                      id="Arrow 5"
+                      d="M466.142 465.142C473.953 457.332 473.953 444.668 466.142 436.858L338.863 309.579C331.052 301.768 318.389 301.768 310.579 309.579C302.768 317.389 302.768 330.052 310.579 337.863L423.716 451L310.579 564.137C302.768 571.948 302.768 584.611 310.579 592.421C318.389 600.232 331.052 600.232 338.863 592.421L466.142 465.142ZM432 471H452V431H432V471Z"
+                      fill="white"
+                    />
+                    <path
+                      class="ar3"
+                      id="Arrow 4"
+                      d="M338.142 464.142C345.953 456.332 345.953 443.668 338.142 435.858L210.863 308.579C203.052 300.768 190.389 300.768 182.579 308.579C174.768 316.389 174.768 329.052 182.579 336.863L295.716 450L182.579 563.137C174.768 570.948 174.768 583.611 182.579 591.421C190.389 599.232 203.052 599.232 210.863 591.421L338.142 464.142ZM303 470H324V430H303V470Z"
+                      fill="white"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </div>
+
             <div class="info_box" id="info_box1">
               <img src="assets/BE NICE.jpg" alt="__card-img__" />
               <div class="info_text">
@@ -186,7 +261,10 @@
               <div class="coverrer"></div>
             </div>
             <div class="info_box" id=" info_box3">
-              <img src="assets/subliming_jpg on instagram.jpg" alt="__card-img__" />
+              <img
+                src="assets/subliming_jpg on instagram.jpg"
+                alt="__card-img__"
+              />
               <div class="info_text">
                 <div class="info_text_1">real time</div>
                 <div class="info_text_2">optimised</div>
@@ -201,13 +279,46 @@
               </div>
               <div class="coverrer"></div>
             </div>
-            <div class="info_box" id=" info_box5">
-              <img src="assets/Frame 5.webp" alt="__card-img__" />
+            <div class="info_box" id=" info_box4">
+              <img src="assets/download.jpg" alt="__card-img__" />
               <div class="info_text">
                 <div class="info_text_1">real time</div>
                 <div class="info_text_2">optimised</div>
               </div>
               <div class="coverrer"></div>
+            </div>
+            <div class="slider_btn" id="slider_btn2">
+              <svg
+                width="900"
+                height="900"
+                viewBox="0 0 900 900"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="Frame 12">
+                  <rect width="900" height="900" fill="transparent" />
+                  <g id="Group 17">
+                    <path
+                      class="ar1"
+                      id="Arrow 6"
+                      d="M592.142 464.142C599.953 456.332 599.953 443.668 592.142 435.858L464.863 308.579C457.052 300.768 444.389 300.768 436.579 308.579C428.768 316.389 428.768 329.052 436.579 336.863L549.716 450L436.579 563.137C428.768 570.948 428.768 583.611 436.579 591.421C444.389 599.232 457.052 599.232 464.863 591.421L592.142 464.142ZM557 470H578V430H557V470Z"
+                      fill="white"
+                    />
+                    <path
+                      class="ar2"
+                      id="Arrow 5"
+                      d="M466.142 465.142C473.953 457.332 473.953 444.668 466.142 436.858L338.863 309.579C331.052 301.768 318.389 301.768 310.579 309.579C302.768 317.389 302.768 330.052 310.579 337.863L423.716 451L310.579 564.137C302.768 571.948 302.768 584.611 310.579 592.421C318.389 600.232 331.052 600.232 338.863 592.421L466.142 465.142ZM432 471H452V431H432V471Z"
+                      fill="white"
+                    />
+                    <path
+                      class="ar3"
+                      id="Arrow 4"
+                      d="M338.142 464.142C345.953 456.332 345.953 443.668 338.142 435.858L210.863 308.579C203.052 300.768 190.389 300.768 182.579 308.579C174.768 316.389 174.768 329.052 182.579 336.863L295.716 450L182.579 563.137C174.768 570.948 174.768 583.611 182.579 591.421C190.389 599.232 203.052 599.232 210.863 591.421L338.142 464.142ZM303 470H324V430H303V470Z"
+                      fill="white"
+                    />
+                  </g>
+                </g>
+              </svg>
             </div>
           </div>
         </div>
@@ -221,17 +332,15 @@
           <!-- <div id="hey">Hey</div> -->
           <div id="for_colour"></div>
           <div class="main_heading_box" id="main_heading_box">
-            HELLO AND WELCOME! <br>
+            HELLO AND WELCOME! <br />
             MY NAME IS ‘OM PRAKASH PAWAR’
           </div>
           <div class="main_content_box" id="main_content_box">
-            <p>
-              
-            </p>
+            <p></p>
             <div id="sec2_btn">
               read more
               <span id="slide_btn"
-                ><svg 
+                ><svg
                   width="113"
                   height="113"
                   viewBox="0 0 113 113"
@@ -275,10 +384,16 @@
           </div>
           <div class="main_image_box" id="main_image_box">
             <div data-scroll data-scroll-speed="1">
-              <img data-scroll data-scroll-speed="1" src="assets/om_new.jpeg" alt="profile image" />
+              <img
+                data-scroll
+                data-scroll-speed="1"
+                src="assets/om_new.jpeg"
+                alt="profile image"
+              />
             </div>
             <svg
-            data-scroll data-scroll-speed="-1"
+              data-scroll
+              data-scroll-speed="-1"
               width="125"
               height="75"
               viewBox="0 0 125 75"
@@ -336,94 +451,37 @@
       <section class="section" id="section3">
         <h3 class="heading" id="heading2">explore some PROJECTS</h3>
         <h1>PROJECTS</h1>
-        <div class="main_projects_box" id="main_projects_box">
-        </div>
+        <div class="main_projects_box" id="main_projects_box"></div>
         <div class="main_caption_box" id="main_caption_box">
           <div id="nav_btns">
             <div class="nav_btn" id="nav_btn_left">
-              <svg
-                width="113"
-                height="113"
-                viewBox="0 0 113 113"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle
-                  cx="56.5"
-                  cy="56.5"
-                  r="55.5"
-                  stroke="white"
-                  stroke-width="2"
-                />
-                <path
-                  d="M46.417 73.7217L67.2294 54.7138"
-                  stroke="white"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M67.2294 55.0078L46.417 35.9999"
-                  stroke="white"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M57 82.0146L87.3536 54.2928"
-                  stroke="white"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M87.3536 54.7217L57 26.9998"
-                  stroke="white"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                />
-              </svg>
+              <svg width="900" height="900" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Frame 12">
+                <rect width="900" height="900" fill="black"/>
+                <g id="Group 17">
+                <path id="Arrow 6" d="M592.142 464.142C599.953 456.332 599.953 443.668 592.142 435.858L464.863 308.579C457.052 300.768 444.389 300.768 436.579 308.579C428.768 316.389 428.768 329.052 436.579 336.863L549.716 450L436.579 563.137C428.768 570.948 428.768 583.611 436.579 591.421C444.389 599.232 457.052 599.232 464.863 591.421L592.142 464.142ZM557 470H578V430H557V470Z" fill="white"/>
+                <path id="Arrow 5" d="M466.142 465.142C473.953 457.332 473.953 444.668 466.142 436.858L338.863 309.579C331.052 301.768 318.389 301.768 310.579 309.579C302.768 317.389 302.768 330.052 310.579 337.863L423.716 451L310.579 564.137C302.768 571.948 302.768 584.611 310.579 592.421C318.389 600.232 331.052 600.232 338.863 592.421L466.142 465.142ZM432 471H452V431H432V471Z" fill="white"/>
+                <path class="ar3" id="Arrow 4" d="M338.142 464.142C345.953 456.332 345.953 443.668 338.142 435.858L210.863 308.579C203.052 300.768 190.389 300.768 182.579 308.579C174.768 316.389 174.768 329.052 182.579 336.863L295.716 450L182.579 563.137C174.768 570.948 174.768 583.611 182.579 591.421C190.389 599.232 203.052 599.232 210.863 591.421L338.142 464.142ZM303 470H324V430H303V470Z" fill="white"/>
+                </g>
+                </g>
+                </svg>
+                
             </div>
             <a href="/"
               ><div class="all_pro_BTN" id="all_pro_BTN">ALL PROJECTS</div></a
             >
             <div class="nav_btn" id="nav_btn_right">
-              <svg
-                width="113"
-                height="113"
-                viewBox="0 0 113 113"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle
-                  cx="56.5"
-                  cy="56.5"
-                  r="55.5"
-                  stroke="white"
-                  stroke-width="2"
-                />
-                <path
-                  d="M46.417 73.7217L67.2294 54.7138"
-                  stroke="white"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M67.2294 55.0078L46.417 35.9999"
-                  stroke="white"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M57 82.0146L87.3536 54.2928"
-                  stroke="white"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M87.3536 54.7217L57 26.9998"
-                  stroke="white"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                />
-              </svg>
+              <svg width="900" height="900" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="Frame 12">
+                <rect width="900" height="900" fill="black"/>
+                <g id="Group 17">
+                <path id="Arrow 6" d="M592.142 464.142C599.953 456.332 599.953 443.668 592.142 435.858L464.863 308.579C457.052 300.768 444.389 300.768 436.579 308.579C428.768 316.389 428.768 329.052 436.579 336.863L549.716 450L436.579 563.137C428.768 570.948 428.768 583.611 436.579 591.421C444.389 599.232 457.052 599.232 464.863 591.421L592.142 464.142ZM557 470H578V430H557V470Z" fill="white"/>
+                <path id="Arrow 5" d="M466.142 465.142C473.953 457.332 473.953 444.668 466.142 436.858L338.863 309.579C331.052 301.768 318.389 301.768 310.579 309.579C302.768 317.389 302.768 330.052 310.579 337.863L423.716 451L310.579 564.137C302.768 571.948 302.768 584.611 310.579 592.421C318.389 600.232 331.052 600.232 338.863 592.421L466.142 465.142ZM432 471H452V431H432V471Z" fill="white"/>
+                <path class="ar3" id="Arrow 4" d="M338.142 464.142C345.953 456.332 345.953 443.668 338.142 435.858L210.863 308.579C203.052 300.768 190.389 300.768 182.579 308.579C174.768 316.389 174.768 329.052 182.579 336.863L295.716 450L182.579 563.137C174.768 570.948 174.768 583.611 182.579 591.421C190.389 599.232 203.052 599.232 210.863 591.421L338.142 464.142ZM303 470H324V430H303V470Z" fill="white"/>
+                </g>
+                </g>
+                </svg>
+                
             </div>
           </div>
           <div class="discription">
@@ -432,6 +490,9 @@
               I independently handled all aspects of design and development in
               my projects, from concept to execution, ensuring cohesive and
               polished outcomes.
+              <br>
+              <br>
+              <b>All the projects are developed in 2022-23 session in 11th standard</b>
             </p>
           </div>
         </div>
@@ -447,7 +508,7 @@
                 <img src="assets/react.svg" alt="logo" />
               </div>
               <div class="tech_img_box">
-                <img src="assets/node2.svg" alt="logo" />
+                <img src="assets/node.svg" alt="logo" />
               </div>
               <div class="tech_img_box">
                 <img src="assets/javascript.svg" alt="logo" />
@@ -456,21 +517,27 @@
                 <img src="assets/HTML.svg" alt="logo" />
               </div>
               <div class="tech_img_box">
-                <img src="assets/node2.svg" alt="logo" />
+                <img src="assets/socket.io.svg" alt="logo" />
               </div>
               <div class="tech_img_box">
-                <img src="assets/node2.svg" alt="logo" />
+                <img src="assets/express.svg" alt="logo" />
               </div>
               <div class="tech_img_box">
-                <img src="assets/javascript.svg" alt="logo" />
+                <img src="assets/mongo.svg" alt="logo" />
+              </div>
+              <div class="tech_img_box">
+                <img src="assets/css.svg" alt="logo" />
+              </div>
+              <div class="tech_img_box">
+                <img src="assets/api.svg" alt="logo" />
               </div>
             </div>
-            <div id="All_tech_box2" class="All_tech_box">
+            <div id="All_tech_box1" class="All_tech_box">
               <div class="tech_img_box">
                 <img src="assets/react.svg" alt="logo" />
               </div>
               <div class="tech_img_box">
-                <img src="assets/node2.svg" alt="logo" />
+                <img src="assets/node.svg" alt="logo" />
               </div>
               <div class="tech_img_box">
                 <img src="assets/javascript.svg" alt="logo" />
@@ -479,21 +546,27 @@
                 <img src="assets/HTML.svg" alt="logo" />
               </div>
               <div class="tech_img_box">
-                <img src="assets/node2.svg" alt="logo" />
+                <img src="assets/socket.io.svg" alt="logo" />
               </div>
               <div class="tech_img_box">
-                <img src="assets/node2.svg" alt="logo" />
+                <img src="assets/express.svg" alt="logo" />
               </div>
               <div class="tech_img_box">
-                <img src="assets/javascript.svg" alt="logo" />
+                <img src="assets/mongo.svg" alt="logo" />
+              </div>
+              <div class="tech_img_box">
+                <img src="assets/css.svg" alt="logo" />
+              </div>
+              <div class="tech_img_box">
+                <img src="assets/api.svg" alt="logo" />
               </div>
             </div>
-            <div id="All_tech_box2" class="All_tech_box">
+            <div id="All_tech_box1" class="All_tech_box">
               <div class="tech_img_box">
                 <img src="assets/react.svg" alt="logo" />
               </div>
               <div class="tech_img_box">
-                <img src="assets/node2.svg" alt="logo" />
+                <img src="assets/node.svg" alt="logo" />
               </div>
               <div class="tech_img_box">
                 <img src="assets/javascript.svg" alt="logo" />
@@ -502,38 +575,22 @@
                 <img src="assets/HTML.svg" alt="logo" />
               </div>
               <div class="tech_img_box">
-                <img src="assets/node2.svg" alt="logo" />
+                <img src="assets/socket.io.svg" alt="logo" />
               </div>
               <div class="tech_img_box">
-                <img src="assets/node2.svg" alt="logo" />
+                <img src="assets/express.svg" alt="logo" />
               </div>
               <div class="tech_img_box">
-                <img src="assets/javascript.svg" alt="logo" />
+                <img src="assets/mongo.svg" alt="logo" />
+              </div>
+              <div class="tech_img_box">
+                <img src="assets/css.svg" alt="logo" />
+              </div>
+              <div class="tech_img_box">
+                <img src="assets/api.svg" alt="logo" />
               </div>
             </div>
-            <div id="All_tech_box2" class="All_tech_box">
-              <div class="tech_img_box">
-                <img src="assets/react.svg" alt="logo" />
-              </div>
-              <div class="tech_img_box">
-                <img src="assets/node2.svg" alt="logo" />
-              </div>
-              <div class="tech_img_box">
-                <img src="assets/javascript.svg" alt="logo" />
-              </div>
-              <div class="tech_img_box">
-                <img src="assets/HTML.svg" alt="logo" />
-              </div>
-              <div class="tech_img_box">
-                <img src="assets/node2.svg" alt="logo" />
-              </div>
-              <div class="tech_img_box">
-                <img src="assets/node2.svg" alt="logo" />
-              </div>
-              <div class="tech_img_box">
-                <img src="assets/javascript.svg" alt="logo" />
-              </div>
-            </div>
+
           </div>
         </div>
       </section>
@@ -574,7 +631,7 @@
         <div id="contact_logos">
           <a href="/"
             ><div class="logo_contact">
-              <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                 <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                 <path
                   fill="#000000"
@@ -686,12 +743,13 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
     <script src="scripts/creator.js"></script>
+    <script src="scripts/nav.js"></script>
     <script src="scripts/script.js"></script>
     <script src="scripts/buttons.js"></script>
   </body>

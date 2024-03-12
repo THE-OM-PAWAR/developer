@@ -2,7 +2,7 @@
 let sec2_btn = document.getElementById("sec2_btn");
 function section2_ani() {
   let info_sec2 = [
-    `I'm a passionate web developer and designer based in indore. 
+    `I'm a passionate developer and designer based in Indore. 
       While my formal education journey recently concluded
       with the completion of my 12th class final exams, my journey into
       the world of web development began long before that. Motivated by
@@ -85,12 +85,7 @@ let nav_btn_right = document.getElementById("nav_btn_right");
 let nav_btn_left = document.getElementById("nav_btn_left");
 let value = main_projects_box.offsetHeight;
 
-// main_projects_box.addEventListener("scrollend", () => {
-//     value-=main_projects_box.offsetHeight,
-//     console.log(value)
-//   console.log("katham");
-//   return;
-// });
+
 let idt2 = false;
 nav_btn_right.addEventListener("click", function () {
   let idt = false;
@@ -134,3 +129,64 @@ nav_btn_left.addEventListener("click", function () {
     value = main_projects_box.offsetHeight;
   }
 });
+
+
+
+
+
+
+
+let slider_btn1 = document.getElementById("slider_btn1")
+let slider_btn2 = document.getElementById("slider_btn2")
+let width= document.getElementById("info_box1").offsetWidth
+let width_container= document.getElementById("info_box_container").offsetWidth
+let info_box_container = document.getElementById("info_box_container")
+
+function slider_visibilty() {
+  info_box_container.addEventListener('mouseenter' , ()=>{
+  document.addEventListener("mousemove" , function(dets){
+    console.log(dets.x  + " " + (width_container -width*1.5))
+    if (dets.x < width*1.5) {
+      slider_btn1.style.opacity = 1
+    }
+    if (dets.x > width*1.5) {
+      slider_btn1.style.opacity = 0
+    }
+    if (dets.x > (width_container-width*1.5)) {
+      slider_btn2.style.opacity = 1
+    }
+    if (dets.x < (width_container-width*1.5)) {
+      slider_btn2.style.opacity = 0
+    }
+  })
+})
+  info_box_container.addEventListener('mouseleave' , ()=>{
+      slider_btn1.style.opacity = 0
+      slider_btn2.style.opacity = 0
+})
+  
+}
+slider_visibilty()
+
+slider_btn2.addEventListener( 'click' , ()=>{
+  document.getElementById("info_box_container").scrollLeft += width 
+})
+slider_btn1.addEventListener( 'click' , ()=>{
+  document.getElementById("info_box_container").scrollLeft -= width 
+})
+
+
+
+function isOverflowing(element) {
+  return element.scrollWidth > element.offsetWidth;
+}
+
+function alertOverflow(element) {
+  if (!isOverflowing(element)) {
+    slider_btn1.style.display = "none"
+    slider_btn2.style.display = "none"
+  } 
+}
+alertOverflow(document.getElementById("info_box_container"))
+
+
