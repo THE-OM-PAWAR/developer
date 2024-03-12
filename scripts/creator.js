@@ -14,7 +14,7 @@ let prj_array = [
       alert_span: `click image to check-out`,
     },
     {
-      prj_link: "/",
+      prj_link: "https://github.com/THE-OM-PAWAR/rural-development-prj.git",
       img_src: "farm.png",
       prj_box_head: "Web-app for rural-areas",
       prj_info: `Ths application is project of Hackathon. it uses complex data-structuring also real time. <br> works on the concept that farmers can sell, post jobs and rent there equipments here`,
@@ -28,7 +28,7 @@ let prj_array = [
       alert_span: `click image to check-out`,
     },
     {
-      prj_link: "/",
+      prj_link: "https://the-om-pawar.github.io/VectorCalculator/",
       img_src: "vector.png",
       prj_box_head: "Vector Calculators",
       prj_info: `static website to solve vector calculations. <br> one of first hosted website developed as school project in 11th standard simple light with childish UI. `,
