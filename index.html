@@ -9,6 +9,7 @@
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="modal.css">
     <title>OM-PAWAR</title>
   </head>
   <body>
@@ -247,16 +248,15 @@
             <div class="info_box" id="info_box1">
               <img src="assets/BE NICE.jpg" alt="__card-img__" />
               <div class="info_text">
-                <div class="info_text_1">UI/UX desgine</div>
-                <div class="info_text_2">vextor Art</div>
+                <div class="info_text_1">Full Stack development</div>
               </div>
               <div class="coverrer"></div>
             </div>
             <div class="info_box" id=" info_box2">
               <img src="assets/Artists Block.jpg" alt="__card-img__" />
               <div class="info_text">
-                <div class="info_text_1">Real time</div>
-                <div class="info_text_2">Optimised</div>
+                <div class="info_text_1">Vector Art</div>
+                <div class="info_text_2">Animations</div>
               </div>
               <div class="coverrer"></div>
             </div>
@@ -266,24 +266,30 @@
                 alt="__card-img__"
               />
               <div class="info_text">
-                <div class="info_text_1">real time</div>
-                <div class="info_text_2">optimised</div>
+                <div class="info_text_1">UI/UX design & development</div>
               </div>
               <div class="coverrer"></div>
             </div>
             <div class="info_box" id=" info_box4">
               <img src="assets/download.jpg" alt="__card-img__" />
               <div class="info_text">
-                <div class="info_text_1">real time</div>
-                <div class="info_text_2">optimised</div>
+                <div class="info_text_1">Database Integration</div>
+                <div class="info_text_2">APIs</div>
               </div>
               <div class="coverrer"></div>
             </div>
             <div class="info_box" id=" info_box4">
-              <img src="assets/download.jpg" alt="__card-img__" />
+              <img src="assets/RT&optimised.png" alt="__card-img__" />
               <div class="info_text">
-                <div class="info_text_1">real time</div>
-                <div class="info_text_2">optimised</div>
+                <div class="info_text_1">socket.io APIs</div>
+                <div class="info_text_2">optimisation</div>
+              </div>
+              <div class="coverrer"></div>
+            </div>
+            <div class="info_box" id=" info_box4">
+              <img src="assets/api.png" alt="__card-img__" />
+              <div class="info_text">
+                <div class="info_text_1">APIs development</div>
               </div>
               <div class="coverrer"></div>
             </div>
@@ -734,13 +740,27 @@
             />
           </svg>
           <div>
-            <a id="foot_link" href="/"><p>ABOUT</p></a>
-            <a id="foot_link" href="/"><p>contact</p></a>
-            <a id="foot_link" href="/"><p>projects</p></a>
+            <a id="foot_link"><p onclick="link(this)">ABOUT</p></a>
+            <a id="foot_link"><p onclick="link(this)">CONTACT</p></a>
+            <a id="foot_link"><p onclick="link(this)">PROJECTS</p></a>
           </div>
         </div>
       </footer>
+
     </div>
+
+
+    <!-- <div id="modal_box">
+      <div class="Modal" id="modal_type1">
+        <h3>Hello world!</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, fuga?</p>
+        <button onclick="closes2(this , closes1())">Close</button>
+      </div> 
+      <div class="Modal" id="modal_type2"><p>Lorem ipsum dolor sit amet consectetur.</p><button>Undo</button></div>
+    </div> -->
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
@@ -752,5 +772,6 @@
     <script src="scripts/nav.js"></script>
     <script src="scripts/script.js"></script>
     <script src="scripts/buttons.js"></script>
+    <script src="scripts/modal.js"></script>
   </body>
 </html>

@@ -288,15 +288,17 @@ function link(element) {
   
   if (element.innerHTML == "CONTACT") {
     scroll.scrollTo(document.getElementById("section5"));
+    modal('type2', "", "click on G-mail to send Mail.", "close" , 6000)
   } else if (element.innerHTML == "PROJECTS") {
     scroll.scrollTo(document.getElementById("section3"));
+    modal('type2', "", "Hover between images to check description.", "close" , 6000)
   } else if (element.innerHTML == "ABOUT") {
     scroll.scrollTo(document.getElementById("section2"));
+    modal('type2', "", "hey what's up", "hey!" , 4000 )
   } else if (text.includes("resume")) {
     window.open(pdfUrl);
   }
 }
-
 
 
 
@@ -324,9 +326,14 @@ function downloadPdf() {
       // Clean up by revoking the blob URL and removing the link element
       window.URL.revokeObjectURL(url);
       document.body.removeChild(a);
+      return complete = true
+    }).then(e=>{
+      modal('type1', 'Downloaded', "Resume PDF file is downloaded successfully. <br> you can excess from download folder.")
     })
     .catch(error => {
       console.error("Failed to download the PDF file: ", error);
+      modal('type1', 'No internet connection', "turn on your internet connection to download the file.")
+
     });
 }
 

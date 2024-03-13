@@ -5,20 +5,23 @@ let prj_array = [
       prj_box_head: "Notes Taking App",
       prj_info: `This is a progressive web application i.e. can be downloaded in any device "mobile, tabs, computers". its responsive and also runs offline`,
       alert_span: `click image to check-out`,
+      live:true
     },
     {
       prj_link: "https://www.rkclasses.co.in/",
-      img_src: "RK poster.png",
+      img_src: "rk poster.png",
       prj_box_head: "RK Coaching classes",
-      prj_info: `This is mine first full-stake vps deployed in 2022. <br> It is a promotional and student management website. well authenticated, stuctured data and realtime website. created in 11th standard for a coaching institute`,
+      prj_info: `This is mine first full-stake vps deployed website in 2022. <br> It is a promotional and student management website. well authenticated, stuctured data and realtime website. created in 11th standard for a coaching institute`,
       alert_span: `click image to check-out`,
+      live:true
     },
     {
       prj_link: "https://github.com/THE-OM-PAWAR/rural-development-prj.git",
       img_src: "farm.png",
       prj_box_head: "Web-app for rural-areas",
-      prj_info: `Ths application is project of Hackathon. it uses complex data-structuring also real time. <br> works on the concept that farmers can sell, post jobs and rent there equipments here`,
+      prj_info: `Ths application is project of Hackathon. it uses complex data-structuring also real time. <br> works on the concept to create a EComerse plateform farmers can sell, post jobs and rent there equipments here`,
       alert_span: `repository on github`,
+      live:false
     },
     {
       prj_link: "http://52.66.73.191:3000/",
@@ -26,6 +29,7 @@ let prj_array = [
       prj_box_head: "chat application",
       prj_info: `A replica of modern realtime messaging application. <br> it is mine initial step to working in backend server and json data transferiing using APIs`,
       alert_span: `click image to check-out`,
+      live:true
     },
     {
       prj_link: "https://the-om-pawar.github.io/VectorCalculator/",
@@ -33,6 +37,7 @@ let prj_array = [
       prj_box_head: "Vector Calculators",
       prj_info: `static website to solve vector calculations. <br> one of first hosted website developed as school project in 11th standard simple light with childish UI. `,
       alert_span: `click image to check-out`,
+      live:true
     },
     {
       prj_link: "https://the-om-pawar.github.io/XO/",
@@ -41,6 +46,7 @@ let prj_array = [
       prj_info: `Progressive application to play with a friend. <br> self developed logics 
       simplistic animation in pure html, css, js and uses of svg `,
       alert_span: `click image to check-out`,
+      live:true
     },
   ];
   
@@ -99,4 +105,8 @@ let prj_array = [
         </div>
     </div>`;
     main_projects_box.appendChild(pre_prj_box1);
+    if (element.live == false) {
+      
+      console.log(pre_prj_box1.children[1].children[0].children[0].innerHTML = "")
+    }
   });
