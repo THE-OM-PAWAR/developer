@@ -880,10 +880,7 @@ menu > ul {
   transform: rotate(90deg);
   animation: arrow_ani4 .3s ease-in-out infinite alternate;
 }
-#nav_btn_left :hover > svg{
-}
-#nav_btn_right :hover > svg{
-}
+
 @keyframes arrow_ani3 {
   0%{
     transform: translateY(-.2rem) rotate(-90deg);
