@@ -6,6 +6,7 @@
   align-items: flex-end;
   flex-wrap: wrap;
   z-index: 70;
+  transition: .3s;
 }
 .Modal {
   background: white;
@@ -17,6 +18,8 @@
   width: 50rem;
   display: flex;
   flex-direction: column;
+  transition: .3s;
+  transform: translateY(60rem); opacity: 0;
 }
 .Modal > h3 {
   color: #000000;
@@ -52,4 +55,5 @@
     align-items: center;
     height: max-content;
     justify-content: space-between;
+    /* transform: translateY(60rem); opacity: 0; */
 }

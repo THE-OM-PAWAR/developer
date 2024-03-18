@@ -176,3 +176,79 @@ function alertOverflow(element) {
   }
 }
 alertOverflow(document.getElementById("info_box_container"));
+
+
+
+
+
+
+
+// copy system
+
+
+const mobile_no_pre = document.getElementById("CTC1");
+
+
+let text = document.getElementById('information1').innerHTML;
+
+const copyContent = async () => {
+  try {
+    await navigator.clipboard.writeText(text);
+    modal('type1', 'Number Copied', "mobile number has been successfully copied to the clipboard" ,"Close")
+  } catch (err) {
+    console.error('Failed to copy: ', err);
+    modal('type1', 'Something went wrong', "mobile number has not been copied to the clipboard" ,"Close")
+  }
+}
+
+mobile_no_pre.onclick = function () {
+  copyContent()
+};
+
+
+
+
+// mobile_no_pre.addEventListener("copy", function (event) {
+// event.preventDefault();
+// console.log(event + "ok");
+// if (event.clipboardData) {
+//   event.clipboardData.setData("text/plain", mobile_no.textContent);
+//   alert("mobile number is copyed");
+// }
+// });
+
+
+const mobile_no_pre2 = document.getElementById("CTC2");
+let text2 = document.getElementById('information2').innerHTML;
+
+
+const copyContent2 = async () => {
+  try {
+    await navigator.clipboard.writeText(text2);
+    modal('type1', 'E-mail Copied', "E-mail has been successfully copied to the clipboard" ,"Close")
+  } catch (err) {
+    console.error('Failed to copy: ', err);
+    modal('type1', 'Something went wrong', "E-mail has not been copied to the clipboard" ,"Close")
+  }
+}
+
+mobile_no_pre2.onclick = function () {
+  copyContent2()
+};
+
+
+
+// mobile_no_pre2.onclick = function () {
+// document.execCommand("copy");
+// };
+
+
+
+// mobile_no_pre2.addEventListener("copy", function (event) {
+// event.preventDefault();
+// console.log(event + "ok");
+// if (event.clipboardData) {
+//   event.clipboardData.setData("text/plain", mobile_no2.textContent);
+//   alert("mobile number is copyed");
+// }
+// });
